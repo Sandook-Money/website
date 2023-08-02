@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'CircularStdFont';
+	src: url('/fonts/CircularStdFont.otf') format('otf');
+}
+
+body {
+	margin: 0;
+    font-family: 'CircularStdFont', 'Times New Roman', Times, serif;
+}
