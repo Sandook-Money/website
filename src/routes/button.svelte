@@ -1,5 +1,5 @@
 <script>
-    let text = 'Sign up';
+    let text = 'Sign up me';
     let bgColor = '#E31C5D';
     let textColor = 'white';
 </script>
