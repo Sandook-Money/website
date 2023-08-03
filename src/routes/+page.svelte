@@ -33,6 +33,7 @@
     #main-banner-mobile-app-img {
         position: absolute;
         right: 11.444444%;
+        bottom: 0%;
     }
     
 </style>
