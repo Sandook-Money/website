@@ -31,19 +31,19 @@
     }
     
     .heading {
-        font-size: 50px;
+        font-size: 4em;
         font-weight: bolder;
         color: #845DD6;
-        width: 300px;
+        width: 350px;
     }
     h1 {
-        font-size: 20px;
+        font-size: 2em;
         font-weight: bolder;
         color: #FFFFFF;
     }
     p {
         text-align: center;
-        font-size: 12px;
+        font-size: 1em;
         opacity: 0.8;
     }
     .list {
