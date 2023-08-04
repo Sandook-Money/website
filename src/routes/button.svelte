@@ -6,7 +6,6 @@
 
 <button style="background-color: {bgColor}; color: {textColor};">{text}</button>
 
-
 <style>
     button {
         width: 148px;

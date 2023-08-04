@@ -61,6 +61,7 @@
 	#main-nav-secondary-container {
 		width: 992px;
 	}
+
 	#main-nav {
 		display: grid;
 		grid-template-columns: 1fr 5fr 1fr;
@@ -88,6 +89,7 @@
 		flex-direction: row;
         justify-content: space-between;
 	}
+
     .nav-link-icon {
         width: 24px;
         height: 24px;
@@ -97,6 +99,7 @@
 		width: 114.65px;
 		height: 40px;
 	}
+	
 	a {
 		text-decoration: none;
 		color: #222222;
