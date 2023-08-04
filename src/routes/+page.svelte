@@ -1,6 +1,7 @@
 <script>
 	import NavBar from './nav.svelte';
 	import Footer from './footer.svelte';
+	import FeatureSection from './features.svelte';
     import MainBannerMobileImg from '$lib/images/main-banner-mobile.svg'
 </script>
 
@@ -16,6 +17,7 @@
 	</div>
     <img id="main-banner-mobile-app-img" src={MainBannerMobileImg} alt="main-app-demo">
 </div>
+<FeatureSection />
 <Footer />
 <style>
 	#main-top {
