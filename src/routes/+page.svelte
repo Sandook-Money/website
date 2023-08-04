@@ -2,8 +2,10 @@
 	import NavBar from './nav.svelte';
 	import Footer from './footer.svelte';
 	import FeatureSection from './features.svelte';
+	import FAQs from './faqs.svelte';
 	import YouCanCount from './you-can-count-on-us.svelte';
 	import MainBannerMobileImg from '$lib/images/main-banner-mobile.svg';
+	import Faqs from './faqs.svelte';
 </script>
 
 <div id="main-top">
@@ -20,6 +22,7 @@
 </div>
 <FeatureSection />
 <YouCanCount />
+<Faqs />
 <Footer />
 
 <style>
