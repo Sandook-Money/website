@@ -12,6 +12,7 @@
 	<NavBar navId={'main-nav'} isLogoVisible={true} isSignupButtonVisible={true} />
 	<div style="display: grid; justify-content: center;">
 		<NavBar
+			menuType={'secondary'}
 			navId={'main-nav-secondary'}
 			bgColor={'#FFFFFF'}
 			isLogoVisible={false}
@@ -45,5 +46,4 @@
 		right: 11.444444%;
 		bottom: 0%;
 	}
-	
 </style>

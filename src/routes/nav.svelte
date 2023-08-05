@@ -1,5 +1,10 @@
 <script>
 	import homeIcon from '$lib/icons/home.svg';
+	import startIcon from '$lib/icons/star.svg';
+	import loadingIcon from '$lib/icons/loading.svg';
+	import graphIcon from '$lib/icons/graph.svg';
+	import mashroomIcon from '$lib/icons/mashroom.svg';
+	import hugIcon from '$lib/icons/hug.svg';
 	import LogoImg from '$lib/images/logo.svg';
 	import ArrowDownIcon from '$lib/icons/arrow-down.svg';
 	import Button from './button.svelte';
@@ -8,6 +13,8 @@
 	export let isLeftIconVisible = false;
 	export let isSignupButtonVisible = false;
 	export let navId = 'main-nav';
+	export let menuType = 'primary';
+
 	let navLinks = [
 		{
 			name: 'Product',
@@ -35,6 +42,41 @@
 			icon: ''
 		}
 	];
+
+	if (menuType == 'secondary') {
+		navLinks = [
+			{
+				name: 'What is Sandook?',
+				url: '/#',
+				icon: ''
+			},
+			{
+				name: 'Features',
+				url: '/#',
+				icon: startIcon
+			},
+			{
+				name: 'How this works',
+				url: '/#',
+				icon: hugIcon
+			},
+			{
+				name: 'Benifits',
+				url: '/#',
+				icon: loadingIcon
+			},
+			{
+				name: 'Know your Growth',
+				url: '/#',
+				icon: graphIcon
+			},
+			{
+				name: 'Community',
+				url: '/#',
+				icon: mashroomIcon
+			}
+		];
+	}
 </script>
 
 <div id={navId + '-container'}>
@@ -54,7 +96,7 @@
 				<div class="link">
 					<a href={url}>{name}</a>
 					{#if icon}
-						<img style="width: 8px; height: 4px;" src={icon} alt="nav-icon" />
+						<img style="width: 14px; height: 18px;" src={icon} alt="nav-icon" />
 					{/if}
 				</div>
 			{/each}
@@ -100,7 +142,12 @@
 		border-style: solid;
 		width: 100%;
 	}
-
+	.nav-links .link {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
 	.nav-links {
 		width: 60%;
 		display: flex;
