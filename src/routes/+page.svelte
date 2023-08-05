@@ -2,6 +2,7 @@
 	import NavBar from './nav.svelte';
 	import Footer from './footer.svelte';
 	import FeatureSection from './features.svelte';
+	import RatingSection from './raiting.svelte';
 	import FAQs from './faqs.svelte';
 	import YouCanCount from './you-can-count-on-us.svelte';
 	import MainBannerMobileImg from '$lib/images/main-banner-mobile.svg';
@@ -38,6 +39,7 @@
 <FeatureSection />
 <YouCanCount />
 <Faqs />
+<RatingSection />
 <Footer />
 
 <style>
@@ -71,9 +73,11 @@
 	}
 	.main-banner-heading p {
 		color: #E31C5D;
+		font-weight: bold;
 	}
 	.main-banner-heading p:nth-child(3) {
 		color: #000000;
+		font-weight: 100;
 	}
 	.main-banner-heading .partner-logos {
 		display: flex;
