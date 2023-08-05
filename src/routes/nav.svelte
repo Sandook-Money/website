@@ -73,6 +73,9 @@
 	#main-nav-secondary-container {
 		width: 992px;
 	}
+	#main-nav-secondary-container .nav-links {
+		width: 100%;
+	}
 
 	#main-nav {
 		display: flex;
