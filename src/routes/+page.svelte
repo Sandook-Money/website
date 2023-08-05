@@ -23,7 +23,7 @@
 			isLeftIconVisible={true}
 		/>
 	</div>
-	<div>
+	<div class="main-banner-heading">
 		<p>Your Path to</p>
 		<span>Smart <strong>Gold Saving</strong> And Investing</span>
 		<p>We believe that your financial journey should be empowerng and rewarding. Our innovatiove mobile app revolutionozes the way you save and invest in gold, making it accessible, seamless, and enticing</p>
@@ -59,10 +59,32 @@
 		right: 11.444444%;
 		bottom: 0%;
 	}
-	.partner-logos {
+	
+	.main-banner-heading {
+		width: 480px;
+		margin-top: 5%;
+		padding-left: 20%;
+	}
+
+	.main-banner-heading span {
+		font-size: 3em;
+	}
+	.main-banner-heading p {
+		color: #E31C5D;
+	}
+	.main-banner-heading p:nth-child(3) {
+		color: #000000;
+	}
+	.main-banner-heading .partner-logos {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-between;
+		justify-content: flex-start;
 		align-items: center;
+		margin-bottom: 30px;
+	}
+	.main-banner-heading .partner-logos img {
+		margin-right: 15px;
+		width: 82px;
+		height: 12px;
 	}
 </style>
