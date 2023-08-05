@@ -16,6 +16,7 @@
 			bgColor={'#FFFFFF'}
 			isLogoVisible={false}
 			isSignupButtonVisible={false}
+			isLeftIconVisible={true}
 		/>
 	</div>
 	<img id="main-banner-mobile-app-img" src={MainBannerMobileImg} alt="main-app-demo" />
