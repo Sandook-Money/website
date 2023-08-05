@@ -1,7 +1,7 @@
 <script>
-    let text = 'Sign up me';
-    let bgColor = '#E31C5D';
-    let textColor = 'white';
+    export let text = 'Sign up me';
+    export let bgColor = '#E31C5D';
+    export let textColor = 'white';
 </script>
 
 <button style="background-color: {bgColor}; color: {textColor};">{text}</button>

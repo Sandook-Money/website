@@ -104,7 +104,7 @@
 		{#if isSignupButtonVisible}
 			<div class="nav-actions">
 				<div class="cta">
-					<Button>Sign up</Button>
+					<Button textColor="black" bgColor="transparent">Sign up</Button>
 				</div>
 			</div>
 		{/if}

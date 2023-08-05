@@ -5,6 +5,9 @@
 	import FAQs from './faqs.svelte';
 	import YouCanCount from './you-can-count-on-us.svelte';
 	import MainBannerMobileImg from '$lib/images/main-banner-mobile.svg';
+	import AugmontLogo from '$lib/logos/augmon.svg';
+	import PhonepayLogo from '$lib/logos/phonepay.svg';
+	import Button from './button.svelte';
 	import Faqs from './faqs.svelte';
 </script>
 
@@ -19,6 +22,16 @@
 			isSignupButtonVisible={false}
 			isLeftIconVisible={true}
 		/>
+	</div>
+	<div>
+		<p>Your Path to</p>
+		<span>Smart <strong>Gold Saving</strong> And Investing</span>
+		<p>We believe that your financial journey should be empowerng and rewarding. Our innovatiove mobile app revolutionozes the way you save and invest in gold, making it accessible, seamless, and enticing</p>
+		<div class="partner-logos">
+			<img src={AugmontLogo} alt="Augmont Logo">
+			<img src={PhonepayLogo} alt="Phonepay Logo">
+		</div>
+		<Button text="Sing Up Now" />
 	</div>
 	<img id="main-banner-mobile-app-img" src={MainBannerMobileImg} alt="main-app-demo" />
 </div>
@@ -45,5 +58,11 @@
 		position: absolute;
 		right: 11.444444%;
 		bottom: 0%;
+	}
+	.partner-logos {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
 	}
 </style>
