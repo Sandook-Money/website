@@ -4,7 +4,7 @@
 </script>
 
 <section>
-	<SectionHeading section="Features" heading="Make you investment journy easier" />
+	<SectionHeading section="Features" heading="Make your investment journy easier" />
 	<div class="all-features-sections">
 		<div class="left-section">
 			<div class="box1">

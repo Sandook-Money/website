@@ -8,7 +8,7 @@
 	export let isLeftIconVisible = false;
 	export let isSignupButtonVisible = false;
 	export let navId = 'main-nav';
-	const navLinks = [
+	let navLinks = [
 		{
 			name: 'Product',
 			url: '/#',
