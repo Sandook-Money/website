@@ -175,7 +175,7 @@
 	}
 	#story-sandook h1 {
 		color: rgba(0, 0, 0, 0.6);
-		font-family: CircularStdFont;
+		font-family: Circular Std;
 		font-size: 40px;
 		font-style: normal;
 		font-weight: 700;
@@ -184,7 +184,7 @@
 	}
     #story-sandook p {
 		margin-top: 0;
-		font-family: CircularStdFont;
+		font-family: Circular Std;
 		color: rgba(0, 0, 0, 0.6);
 		font-size: 16px;
 		font-style: normal;
@@ -194,7 +194,7 @@
 
 	#story-sandook p:nth-child(1) {
 		margin-top: 0;
-		font-family: CircularStdFont;
+		font-family: Circular Std;
 		color: rgba(0, 0, 0, 0.6);
 		font-size: 16px;
 		font-style: normal;

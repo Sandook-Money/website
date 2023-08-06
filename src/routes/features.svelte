@@ -75,7 +75,7 @@
 		flex-direction: row;
 		justify-content: center;
 		align-items: flex-start;
-		font-family: 'CircularStdFont';
+		font-family: 'Circular Std';
 		padding: 10%;
 		padding-top: 0%;
         color: #222222;

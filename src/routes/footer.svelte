@@ -137,7 +137,7 @@
 	footer {
 		padding: 5%;
 		background-color: white;
-		font-family: 'CircularStdFont';
+		font-family: 'Circular Std';
 	}
 	footer h1 {
 		font-size: 15px;

@@ -3,13 +3,13 @@
 	import Footer from './footer.svelte';
 	import FeatureSection from './features.svelte';
 	import RatingSection from './raiting.svelte';
-	import FAQs from './faqs.svelte';
 	import YouCanCount from './you-can-count-on-us.svelte';
 	import MainBannerMobileImg from '$lib/images/main-banner-mobile.svg';
 	import AugmontLogo from '$lib/logos/augmon.svg';
 	import PhonepayLogo from '$lib/logos/phonepay.svg';
 	import Button from './button.svelte';
 	import Faqs from './faqs.svelte';
+	import Benefits from './benefits.svelte';
 </script>
 
 <div id="main-top">
@@ -38,6 +38,7 @@
 </div>
 <FeatureSection />
 <YouCanCount />
+<Benefits />
 <Faqs />
 <RatingSection />
 <Footer />

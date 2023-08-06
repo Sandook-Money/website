@@ -1,10 +1,9 @@
 @font-face {
-	font-family: 'CircularStdFont';
+	font-family: 'Circular Std';
 	src: url('/fonts/CircularStdFont.otf') format('otf');
 }
 
 body {
 	margin: 0;
-    font-family: 'CircularStdFont', 'Times New Roman', Times, serif;
+	font-family: 'Circular Std', 'Times New Roman', Times, serif;
 }
-

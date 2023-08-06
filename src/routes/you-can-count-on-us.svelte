@@ -27,7 +27,7 @@
 		background: radial-gradient(circle, rgba(54, 20, 124, 1) 0%, rgba(68, 26, 158, 1) 78%);
 		color: #FFFFFF;
         padding: 10%;
-        font-family: 'CircularStdFont';
+        font-family: 'Circular Std';
     }
     
     .heading {
@@ -49,7 +49,7 @@
     .list {
         display: flex;
         flex-direction: row;
-        font-family: 'CircularStdFont';
+        font-family: 'Circular Std';
     }
     .list-box {
         width: 33.33%;
