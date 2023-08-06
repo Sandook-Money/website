@@ -56,6 +56,18 @@
 </section>
 
 <style>
+	p:nth-child(1) {
+		color: #441a9e;
+		text-align: center;
+		font-family: Circular Std;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 114%; /* 15.96px */
+		letter-spacing: 4.2px;
+		text-transform: uppercase;
+		text-align: left;
+	}
 	h1 {
 		color: #222;
 		text-align: center;
@@ -65,6 +77,8 @@
 		font-weight: 700;
 		line-height: 114%; /* 54.72px */
 		letter-spacing: -0.96px;
+		text-align: left;
+		margin-top: 0;
 	}
 	#benefits-section {
 		display: flex;
@@ -83,6 +97,25 @@
 		padding: 5%;
 		margin-top: 50px;
 		margin-bottom: 50px;
+	}
+	#benefits-section .benefits .benefit-card h1 {
+		color: #222;
+		font-family: Circular Std;
+		font-size: 32px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 42px; /* 131.25% */
+		letter-spacing: -0.64px;
+		text-align: left;
+	}
+	#benefits-section .benefits .benefit-card p {
+		color: #666;
+		font-family: Circular Std;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 450;
+		line-height: 24px; /* 150% */
+        text-align: left;
 	}
 	#benefits-section .benefits .benefit-card .benefits-circle {
 		display: flex;
