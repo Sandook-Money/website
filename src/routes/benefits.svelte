@@ -5,6 +5,10 @@
 	import SharedIcon from '$lib/icons/shared.svg';
 	import unionIcon from '$lib/icons/union.svg';
 	import medalIcon from '$lib/icons/medal.svg';
+
+	import Mobile1 from '$lib/images/2.svg';
+	import Mobile2 from '$lib/images/3.svg';
+	import Mobile3 from '$lib/images/4.svg';
 	let data = [
 		{
 			icon: walletIcon,
@@ -53,6 +57,20 @@
 			</div>
 		{/each}
 	</div>
+</section>
+
+<section id="features-of-making">
+	<h1>Features of making your investment journey easier</h1>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+		labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+		laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+		voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+		non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+	<img class="mobile-1" src={Mobile1} />
+	<img class="mobile-2" src={Mobile2} />
+	<img class="mobile-3" src={Mobile3} />
 </section>
 
 <style>
@@ -115,7 +133,7 @@
 		font-style: normal;
 		font-weight: 450;
 		line-height: 24px; /* 150% */
-        text-align: left;
+		text-align: left;
 	}
 	#benefits-section .benefits .benefit-card .benefits-circle {
 		display: flex;
@@ -125,5 +143,47 @@
 		align-items: center;
 		border-radius: 1000px;
 		border: 1px solid #f4f4f4;
+	}
+	#features-of-making {
+		background: #fee8ff;
+		display: flex;
+		height: 785px;
+		padding-top: 100px;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		position: relative;
+		padding: 10%;
+	}
+	#features-of-making p {
+		width: 50%;
+	}
+	#features-of-making h1 {
+		color: #441a9e;
+		font-family: Circular Std;
+		font-size: 48px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 114%; /* 54.72px */
+		letter-spacing: -0.96px;
+        width: 700px;
+	}
+	.mobile-1 {
+		position: absolute;
+		left: 0;
+		bottom: 4%;
+        width: 25%;
+	}
+	.mobile-2 {
+		position: absolute;
+		right: 40%;
+		bottom: 0;
+        width: 25%;
+	}
+	.mobile-3 {
+		position: absolute;
+		right: 10%;
+		bottom: 0;
+        width: 25%;
 	}
 </style>
