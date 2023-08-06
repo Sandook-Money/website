@@ -10,6 +10,8 @@
 	import Button from './button.svelte';
 	import Faqs from './faqs.svelte';
 	import Benefits from './benefits.svelte';
+	import FinalChart from './final-chart.svelte';
+	
 </script>
 
 <div id="main-top">
@@ -27,10 +29,14 @@
 	<div class="main-banner-heading">
 		<p>Your Path to</p>
 		<span>Smart <strong>Gold Saving</strong> And Investing</span>
-		<p>We believe that your financial journey should be empowerng and rewarding. Our innovatiove mobile app revolutionozes the way you save and invest in gold, making it accessible, seamless, and enticing</p>
+		<p>
+			We believe that your financial journey should be empowerng and rewarding. Our innovatiove
+			mobile app revolutionozes the way you save and invest in gold, making it accessible, seamless,
+			and enticing
+		</p>
 		<div class="partner-logos">
-			<img src={AugmontLogo} alt="Augmont Logo">
-			<img src={PhonepayLogo} alt="Phonepay Logo">
+			<img src={AugmontLogo} alt="Augmont Logo" />
+			<img src={PhonepayLogo} alt="Phonepay Logo" />
 		</div>
 		<Button text="Sing Up Now" />
 	</div>
@@ -38,6 +44,7 @@
 </div>
 <FeatureSection />
 <YouCanCount />
+<FinalChart />
 <Benefits />
 <Faqs />
 <RatingSection />
@@ -62,7 +69,7 @@
 		right: 11.444444%;
 		bottom: 0%;
 	}
-	
+
 	.main-banner-heading {
 		width: 480px;
 		margin-top: 5%;
@@ -73,7 +80,7 @@
 		font-size: 3em;
 	}
 	.main-banner-heading p {
-		color: #E31C5D;
+		color: #e31c5d;
 		font-weight: bold;
 	}
 	.main-banner-heading p:nth-child(3) {

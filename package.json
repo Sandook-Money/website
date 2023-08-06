@@ -29,6 +29,8 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"bootstrap": "^5.3.1"
+		"bootstrap": "^5.3.1",
+		"chart.js": "^4.3.3",
+		"d3-scale": "^4.0.2"
 	}
 }
