@@ -157,6 +157,7 @@
 	}
 	#features-of-making p {
 		width: 50%;
+        color: #666;
 	}
 	#features-of-making h1 {
 		color: #441a9e;

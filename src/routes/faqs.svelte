@@ -1,4 +1,5 @@
 <script>
+    import PlusIcon from '$lib/icons/plus.svg';
 	const faqs = [
 		{
 			question: 'is my instment in digital gols with sandook money safe',
@@ -72,7 +73,9 @@
 	<div>
 		{#each faqs as { question, answer }}
 			<div class="faqs-ans">
-				<h1>{question}</h1>
+                <div class="faq-ques">
+    				<h1>{question}</h1><img class="plus-icon" src={PlusIcon}/>
+                </div>
                 <p>{answer}</p>
 				<hr>
 			</div>
@@ -102,6 +105,14 @@
     #faqs div:last-child .faqs-ans {
         width: 100%;
     }
+    .faq-ques {
+        width: 100% !important;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
     #faqs div:last-child {
         width: 70%;
         display: flex;
