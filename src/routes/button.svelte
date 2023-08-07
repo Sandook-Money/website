@@ -2,9 +2,10 @@
     export let text = 'Sign up me';
     export let bgColor = '#E31C5D';
     export let textColor = 'white';
+    export let width = '148px'; 
 </script>
 
-<button style="background-color: {bgColor}; color: {textColor};">{text}</button>
+<button style="background-color: {bgColor}; color: {textColor}; width: {width};">{text}</button>
 
 <style>
     button {

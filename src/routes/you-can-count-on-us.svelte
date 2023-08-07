@@ -134,17 +134,17 @@
 	{/each}
 </section>
 
-<section>
-	<div>
+<section id="unlock-section">
+	<div class="unlock-section-left">
 		<h1>Unlock exciting rewards as you save and invest with Sandook</h1>
 		<p>
 			Unlock exciting rewards as you save and invest with Sandook. Earn loyalty points, exclusive
 			discounts, and special offers from our partner brands. Your financial journey becomes even
 			more rewarding with Sandook
 		</p>
-		<Button text="Refer any of your Friend" />
+		<Button width={'239px'} text="Refer any of your Friend" />
 	</div>
-	<div>
+	<div class="unlock-section-right">
 		<img src={Image8} alt="image" />
 	</div>
 </section>
@@ -322,5 +322,50 @@
 		font-weight: 450;
 		line-height: 24px; /* 150% */
 		text-align: left;
+	}
+
+	#unlock-section {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		padding: 10%;
+		background: linear-gradient(270deg, #542876 0%, rgba(82, 11, 90, 0) 100%), #322949;
+		background-blend-mode: overlay, normal, normal;
+	}
+	#unlock-section .unlock-section-left {
+		width: 50%;
+	}
+	#unlock-section .unlock-section-left h1 {
+		color: #fff;
+		font-family: Circular Std;
+		font-size: 40px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 114%; /* 45.6px */
+		letter-spacing: -0.8px;
+		text-align: left;
+	}
+	#unlock-section .unlock-section-left p {
+		color: rgba(255, 255, 255, 0.6);
+		font-family: Circular Std;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 450;
+		line-height: 24px; /* 150% */
+		text-align: left;
+	}
+	#unlock-section .unlock-section-left button {
+		
+	}
+	#unlock-section .unlock-section-right {
+		width: 50%;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		align-items: center;
+	}
+	#unlock-section .unlock-section-right img {
+
 	}
 </style>
