@@ -149,24 +149,24 @@
 	</div>
 </section>
 
-<section>
-	<div>
-		<div>
+<section id="how-it-works">
+	<div class="top-heading">
+		<div class="top-heading-text">
 			<p>How it Works?</p>
 			<h1>Unlock financial potential: Understand. Invest. Prosper.</h1>
 		</div>
-		<div>
+		<div class="top-heading-video-play">
 			<p>Play Video</p>
-			<img src={PlayIcon} alt="Play Vide Icon" />
+			<img class="video-play-icon" src={PlayIcon} alt="Play Vide Icon" />
 		</div>
 	</div>
-	<div>
+	<div class="how-it-works-content">
 		{#each howItWorks as { image, step, title, summary }}
-			<div>
-				<div>
-					<img src={image} alt="image"/>
+			<div class="how-it-works-content-card">
+				<div class="how-it-works-content-card-image">
+					<img src={image} alt="image" />
 				</div>
-				<div>
+				<div class="how-it-works-content-summary">
 					<p>{step}</p>
 					<h1>{title}</h1>
 					<p>
@@ -213,5 +213,114 @@
 	.list-box {
 		width: 33.33%;
 		margin: 15px;
+	}
+
+	#how-it-works {
+		display: flex;
+		height: 939px;
+		padding: 100px 0px;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		background: #fbf2f5;
+		padding: 10%;
+	}
+
+	#how-it-works .top-heading {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		width: 100%;
+	}
+	#how-it-works .top-heading .top-heading-text {
+		width: 80%;
+	}
+	#how-it-works .top-heading .top-heading-text h1 {
+		color: #222;
+		font-family: Circular Std;
+		font-size: 40px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 114%; /* 45.6px */
+		letter-spacing: -0.8px;
+		width: 680px;
+	}
+	#how-it-works .top-heading .top-heading-text p {
+		color: #222;
+		font-family: Circular Std;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 450;
+		line-height: 114%; /* 18.24px */
+		letter-spacing: -0.32px;
+		text-align: left;
+	}
+	#how-it-works .top-heading .top-heading-video-play {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		align-items: flex-end;
+	}
+	#how-it-works .top-heading .top-heading-video-play img {
+		margin-left: 2%;
+		width: 20%;
+	}
+	#how-it-works .top-heading .top-heading-video-play p {
+		width: 80%;
+		margin: 0;
+		text-decoration: underline;
+	}
+	#how-it-works .how-it-works-content {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 5%;
+	}
+	#how-it-works .how-it-works-content-card {
+		width: 30%;
+	}
+	#how-it-works .how-it-works-content-card .how-it-works-content-card-image {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: center;
+		border-radius: 16px;
+		padding: 50px 50px 0 50px;
+		background-color: #ffffff;
+	}
+	#how-it-works .how-it-works-content-card .how-it-works-content-summary {
+		display: flex;
+		flex-direction: column;
+	}
+	#how-it-works .how-it-works-content-card .how-it-works-content-summary p:nth-child(1) {
+		color: #e31c5d;
+		font-family: Circular Std;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 450;
+		line-height: 114%; /* 18.24px */
+		letter-spacing: 2.88px;
+		text-transform: uppercase;
+		text-align: left;
+	}
+	#how-it-works .how-it-works-content-card .how-it-works-content-summary h1 {
+		color: #222;
+		font-family: Circular Std;
+		font-size: 32px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 42px; /* 131.25% */
+		letter-spacing: -0.64px;
+		text-align: left;
+	}
+	#how-it-works .how-it-works-content-card .how-it-works-content-summary p {
+		color: #666;
+		font-family: Circular Std;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 450;
+		line-height: 24px; /* 150% */
+		text-align: left;
 	}
 </style>
