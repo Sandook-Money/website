@@ -107,7 +107,7 @@
 	</div>
 </div>
 
-<section>
+<section id="info-section">
 	{#each infoSection as { image, heading, summary, quote, by, reverse }}
 		<div class="info-section-row">
 			<div class="info-section-row-img">
@@ -119,10 +119,10 @@
 					{summary}
 				</p>
 				<div class="info-section-row-feedback">
-					<div>
+					<div class="quote-div">
 						<img class="quote-icon" src={QuoteIcon} alt="Quote Icon" />
 					</div>
-					<div>
+					<div class="feedback">
 						<p>
 							{quote}
 						</p>
@@ -356,7 +356,6 @@
 		text-align: left;
 	}
 	#unlock-section .unlock-section-left button {
-		
 	}
 	#unlock-section .unlock-section-right {
 		width: 50%;
@@ -366,6 +365,40 @@
 		align-items: center;
 	}
 	#unlock-section .unlock-section-right img {
+	}
 
+	#info-section {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 10%;
+	}
+	#info-section .info-section-row {
+		display: flex;
+		flex-direction: row;
+		margin-top: 100px;
+	}
+	#info-section .info-section-row .info-section-row-img {
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 52px 111px 52px 111px;
+		border-radius: 16px;
+		background: radial-gradient(
+			33.55% 32.75% at 81.83% 69.03%,
+			rgba(255, 246, 248, 0) 0%,
+			#fff6f8 100%
+		);
+	}
+	#info-section .info-section-row .info-section-row-content {
+		width: 50%;
+		padding-left: 40px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
 	}
 </style>
