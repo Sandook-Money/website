@@ -259,6 +259,7 @@
 			rgba(239, 234, 251, 0) 0%,
 			#efeafb 100%
 		);
+		overflow: hidden;
 	}
 	.box4 .box4-row {
 		display: flex;
