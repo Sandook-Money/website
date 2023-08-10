@@ -41,33 +41,37 @@
 	const infoSection = [
 		{
 			image: Image5,
-			heading: 'Set your financial dreams and goals within the app',
+			heading:
+				'Set your financial <span style="color: #E31C5D;">dreams and goals</span> within the app',
 			summary:
 				"Set your financial dreams and goals within the app. Whether it's a dream vacation or buying your first car, Sandook will help you create a personalized savings plan to turn your dreams into reality.",
 			quote:
 				"“Sandook Money has completely transformed the way I save and invest. With their innovative features like AutoPay and lifestyle investing, I'm effortlessly grow...”",
 			by: '-   Rahul Sharma, Mumbai',
-			reverse: false
+			reverse: false,
+			bgColor: '#FFF6F8'
 		},
 		{
 			image: Image6,
-			heading: 'Experience the convenience of doorstep delivery of physical gold',
+			heading: 'Experience the convenience of <span style="color: #E31C5D;">doorstep delivery</span> of physical gold',
 			summary:
 				'Experience the convenience of doorstep delivery of physical gold. Convert your digital gold into tangible assets and enjoy the pleasure of holding physical gold in your hands.',
 			quote:
 				'"As a young professional, I always struggled with saving money. But Sandook Money changed the game for me. The round-off feature allows me to save effortlessly, ...”',
 			by: '-   Sneha Gupta, Delhi',
-			reverse: true
+			reverse: true,
+			bgColor: '#FBF5E5'
 		},
 		{
 			image: Image7,
-			heading: 'Track Your Investment',
+			heading: 'Track Your <span style="color: #E31C5D;">Investment</span>',
 			summary:
 				'Stay informed about the performance of your gold investments with real-time tracking. Monitor the value of your holdings and gain insights into the growth of your wealth.',
 			quote:
 				"“Sandook Money has completely transformed the way I save and invest. With their innovative features like AutoPay and lifestyle investing, I'm effortlessly grow...”",
 			by: '-   Rahul Sharma, Mumbai',
-			reverse: false
+			reverse: false,
+			bgColor: '#F8E6FA'
 		}
 	];
 
@@ -108,13 +112,13 @@
 </div>
 
 <section id="info-section">
-	{#each infoSection as { image, heading, summary, quote, by, reverse }}
-		<div class="info-section-row">
-			<div class="info-section-row-img">
+	{#each infoSection as { image, heading, summary, quote, by, reverse, bgColor }}
+		<div class="info-section-row" style="flex-direction: {reverse ? 'row-reverse':'row'}">
+			<div class="info-section-row-img" style="margin-left: {reverse ? '5%':'0%'}; background: none; background-color: {bgColor}; ">
 				<img src={image} alt="Image" />
 			</div>
-			<div class="info-section-row-content">
-				<h1>{heading}</h1>
+			<div class="info-section-row-content" style="padding: {reverse ? '0':''}">
+				<h1>{@html heading}</h1>
 				<p>
 					{summary}
 				</p>
@@ -400,5 +404,31 @@
 		flex-direction: column;
 		justify-content: flex-start;
 		align-items: center;
+	}
+	.info-section-row-content h1 {
+		color: #222;
+		font-family: Circular Std;
+		font-size: 40px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 114%; /* 45.6px */
+		letter-spacing: -0.8px;
+		margin: 0;
+		margin-bottom: 25px;
+	}
+	.info-section-row-feedback {
+		display: flex;
+		flex-direction: row;
+		margin-top: 15px;
+	}
+
+	.info-section-row-feedback p {
+		margin: 0;
+		margin-bottom: 15px;
+		text-align: left;
+	}
+
+	.info-section-row-feedback .quote-div {
+		margin-right: 15px;
 	}
 </style>
