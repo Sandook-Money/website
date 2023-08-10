@@ -5,7 +5,7 @@
 			question: 'is my instment in digital gols with sandook money safe',
 			answer: 'no answer provided!'
 		},
-		{ question: 'Can i convert digital gold into phycisal gold', answer: 'no answer provided!' },
+		{ question: 'Can i convert digital gold into phycisal gold\', answer: \'no answer provided!' },
 		{
 			question: 'What is the minium amount required to start investing in digital gold',
 			answer: 'no answer provided!'
