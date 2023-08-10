@@ -3,9 +3,13 @@
     export let bgColor = '#E31C5D';
     export let textColor = 'white';
     export let width = '148px'; 
+    export let btnClass = 'default-btn';
+    export let position = 'relative';
+    export let top = '0';
+    export let left = '0';
 </script>
 
-<button style="background-color: {bgColor}; color: {textColor}; width: {width};">{text}</button>
+<button class={btnClass} style="position: {position}; top: {top}; left: {left}; background-color: {bgColor}; color: {textColor}; width: {width};">{text}</button>
 
 <style>
     button {
