@@ -1,8 +1,8 @@
 <script>
 </script>
 
-<section id="terms-statement">
-	<p>Terms of Use</p>
+<section class="statement">
+	<p class="bold">Terms of Use</p>
 
 	<p>
 		This document is an electronic record in terms of Information Technology Act, 2000, amendments
@@ -38,7 +38,7 @@
 		to Clients, Advertisers, Financial institutions
 	</p>
 
-	<p>Eligibility</p>
+	<p class="bold">Eligibility</p>
 
 	<p>By accessing the Service and Gullak App You represent that:-</p>
 
@@ -60,7 +60,7 @@
 		advice, and these Terms and Conditions do not constitute any tax advice to You.
 	</p>
 
-	<p>Registration</p>
+	<p class="bold">Registration</p>
 
 	<p>
 		In order to use the Services You need to register on the Gullak App/Platform and provide us with
@@ -74,7 +74,7 @@
 		of sub-accounts for availing such services.
 	</p>
 
-	<p>Gullak Services</p>
+	<p class="bold">Gullak Services</p>
 
 	<p>
 		Gullak Account An account that you create when you sign-up/register with Gullak to access the
@@ -139,7 +139,7 @@
 		notices contained in the content downloaded from the App/Platform.
 	</p>
 
-	<p>Placing of order</p>
+	<p class="bold">Placing of order</p>
 
 	<p>
 		1) You can purchase Gold on the Platform on a pre-payment basis i.e., once you place the order
@@ -182,7 +182,7 @@
 		of the same shall be available at Augmont terms and conditions.
 	</p>
 
-	<p>Pricing and Payment policy</p>
+	<p class="bold">Pricing and Payment policy</p>
 
 	<p>
 		1) Except where noted otherwise, the price displayed on the App/Platform, represents the market
@@ -203,7 +203,7 @@
 		https://www.augmont.com/terms-conditions
 	</p>
 
-	<p>Delivery of Gold</p>
+	<p class="bold">Delivery of Gold</p>
 
 	<p>
 		1) For the purposes of making delivery to You, You are required to provide a valid address
@@ -236,7 +236,7 @@
 		&#8195;&#8195; Delete. &#8195;(ii) You can also delete the mandate via your UPI app
 	</p>
 
-	<p>Intellectual Property Rights</p>
+	<p class="bold">Intellectual Property Rights</p>
 
 	<p>
 		Intellectual Property Rights for the purpose of this Terms of Use shall always mean and include
@@ -268,7 +268,7 @@
 		proprietary rights, and is prohibited.
 	</p>
 
-	<p>Termination</p>
+	<p class="bold">Termination</p>
 
 	<p>
 		You agree that Gullak at its sole discretion may terminate your contract without prior notice
@@ -278,7 +278,7 @@
 		the said circumstances and Gullak is not liable for any loss to You due to termination.
 	</p>
 
-	<p>Limitation of Liability</p>
+	<p class="bold">Limitation of Liability</p>
 
 	<p>
 		Financial and non-financial transactions performed by You on the Platform is always processed by
@@ -294,7 +294,7 @@
 		otherwise.
 	</p>
 
-	<p>Indemnification</p>
+	<p class="bold">Indemnification</p>
 
 	<p>
 		You shall indemnify and hold harmless Gullak Money its owner, licensee, affiliates,
@@ -307,7 +307,7 @@
 
 	<p />
 
-	<p>Force Majeure</p>
+	<p class="bold">Force Majeure</p>
 
 	<p>
 		A Force Majeure Event shall mean any event that is beyond the reasonable control of Gullak Money
@@ -320,7 +320,7 @@
 
 	<p />
 
-	<p>Dispute, Governing Law &amp; Jurisdiction</p>
+	<p class="bold">Dispute, Governing Law &amp; Jurisdiction</p>
 
 	<p>
 		This Agreement and the rights and obligations thereunder and the relations of the parties and
@@ -334,7 +334,7 @@
 
 	<p />
 
-	<p>Disclaimers</p>
+	<p class="bold">Disclaimers</p>
 
 	<p>
 		As part of this continual innovation and improvement, we sometimes may add or remove features
@@ -379,7 +379,7 @@
 		connected with such disputes.
 	</p>
 
-	<p>Contact Us</p>
+	<p class="bold">Contact Us</p>
 
 	<p>
 		Finterscale Technology Private Limited 4th Floor, Building, 387, Koramangala 4th Block,
@@ -388,3 +388,13 @@
 
 	<p>Tel: +91 - 80486 41973 Email: support@gullak.money</p>
 </section>
+
+<style>
+	.statement {
+		padding: 10%;
+	}
+
+	.statement .bold {
+		font-weight: bold;
+	}
+</style>

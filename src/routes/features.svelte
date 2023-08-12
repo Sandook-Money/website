@@ -16,11 +16,11 @@
 	import Zomato from '$lib/icons/zomato.png';
 </script>
 
-<section>
+<section id="features-investment-journy">
 	<SectionHeading section="Features" heading="Make your investment journy easier" />
 	<div class="all-features-sections">
 		<div class="left-section">
-			<div class="box1">
+			<div id="auto-pilot" class="box1">
 				<div class="content">
 					<p>Sandook on AutoPilot</p>
 					<h1>Effortlessly build your savings with automatic daily deductions</h1>
@@ -34,7 +34,7 @@
 					<img class="vector" src={Box1Vector} />
 				</div>
 			</div>
-			<div class="box2">
+			<div id="quick-withdrawals" class="box2">
 				<div class="image">
 					<div class="curved-div">
 						<p>Quick Withdrawals</p>
@@ -45,7 +45,7 @@
 			</div>
 		</div>
 		<div class="right-section">
-			<div class="box3">
+			<div id="lifestyle-investing" class="box3">
 				<p>Lifestyle Investing</p>
 				<Button text="Coming Soon" />
 				<h1>Embrace a new way of investing with Sandook's lifestyle reward investing feature.</h1>
@@ -82,7 +82,7 @@
 				</div>
 				<div class="gradient-bottom" />
 			</div>
-			<div class="box4">
+			<div id="round-off" class="box4">
 				<div class="box4-row">
 					<p>Round Offs</p>
 					<Button bgColor="#631167" text="Coming Soon" />

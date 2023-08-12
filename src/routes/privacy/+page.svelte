@@ -1,9 +1,8 @@
 <script>
-    
 </script>
 
-<section id="privacy-statement">
-	<p>Privacy Policy</p>
+<section class="statement">
+	<p class="bold">Privacy Policy</p>
 
 	<p>
 		SANDOOK.MONEY Application is developed by Finterscale Technologies Private Limited, a company
@@ -33,7 +32,7 @@
 		India. If you do not agree with this privacy policy, please do not use or access our Platform.
 	</p>
 
-	<p>Information Collection</p>
+	<p class="bold">Information Collection</p>
 
 	<p>
 		We may collect your Personal Information when you use our services or Platform or otherwise
@@ -42,7 +41,9 @@
 		improve the Sandook Platform.
 	</p>
 
-	<p>Personal and Sensitive Personal Information collected includes but not limited to:</p>
+	<p class="bold">
+		Personal and Sensitive Personal Information collected includes but not limited to:
+	</p>
 
 	<p>
 		Name, age, gender, photo, address, phone number, e-mail id, your contacts and nominee details.
@@ -81,7 +82,7 @@
 		Personal Information
 	</p>
 
-	<p>Sandook may process your Personal Information for the following purposes:</p>
+	<p class="bold">Sandook may process your Personal Information for the following purposes:</p>
 
 	<p>
 		Creation of your account and verification of your identity and access privileges. Provide you
@@ -123,3 +124,13 @@
 		hard drive/storage at the end of a session. You are always free
 	</p>
 </section>
+
+<style>
+	.statement {
+		padding: 10%;
+	}
+
+	.statement .bold {
+		font-weight: bold;
+	}
+</style>

@@ -1,15 +1,15 @@
 <script>
 	export const prerender = true;
 	export const ssr = true;
-	import StartIcon from '$lib/icons/start-white.svg';
-	import HalfStartIcon from '$lib/icons/half-star.svg';
-	import Rating1 from '$lib/images/rating-1.svg';
-	import Rating2 from '$lib/images/rating-2.svg';
-	import AppStore from '$lib/images/app-store.svg';
-	import PlayStore from '$lib/images/play-store.svg';
+	// import StartIcon from '$lib/icons/start-white.svg';
+	// import HalfStartIcon from '$lib/icons/half-star.svg';
+	// import Rating1 from '$lib/images/rating-1.svg';
+	// import Rating2 from '$lib/images/rating-2.svg';
+	// import AppStore from '$lib/images/app-store.svg';
+	// import PlayStore from '$lib/images/play-store.svg';
 
-	import AppleStore from '$lib/icons/apple-store.svg';
-	import GoogleStore from '$lib/icons/google-play.svg';
+	// import AppleStore from '$lib/icons/apple-store.svg';
+	// import GoogleStore from '$lib/icons/google-play.svg';
 </script>
 
 <section id="story-sandook">
@@ -20,16 +20,16 @@
 			<span />
 		</div>
 		<div>
-			<h1>the story of Sandook begins with Trust.</h1>
+			<h1>The story of Sandook begins with Trust.</h1>
 		</div>
 	</div>
 	<div>
 		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-			labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-			laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-			voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-			non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			Welcome to Sandook, the groundbreaking mobile app that empowers you to unlock your financial potential through seamless and rewarding gold saving and investing. We understand that financial management and wealth creation are crucial aspects of securing a prosperous future. That's why we've designed Sandook to simplify your investment journey and provide easy access to digital gold.
+
+With Sandook, you can start your gold-saving adventure with as little as Rs. 10, making it accessible to everyone, regardless of their financial capacity. Our platform offers a user-friendly interface, ensuring a smooth onboarding experience that takes less than 30 seconds.
+
+Experience the power of our innovative features, such as AutoPay, which enables automatic daily deductions for consistent savings, and the round-off method, allowing you to grow your savings... Read More
 		</p>
 		<p>
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -47,7 +47,7 @@
 		</p>
 	</div>
 </section>
-<section>
+<!-- <section>
 	<div id="rating-section">
 		<div class="platfroms">
 			<div class="store">
@@ -96,7 +96,7 @@
 			<div />
 		</div>
 	</div>
-</section>
+</section> -->
 
 <style>
 	#rating-section {

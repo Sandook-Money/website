@@ -4,50 +4,50 @@
 	import PlusIcon from '$lib/icons/plus.svg';
 	const faqs = [
 		{
-			question: 'is my instment in digital gols with sandook money safe',
-			answer: 'no answer provided!'
+			question: 'What is Sandook Money?',
+			answer: 'Sandook Money is an innovative mobile app that simplifies and amplifies gold saving and investing. It allows you to save and invest in digital gold with ease.'
 		},
-		{ question: "Can i convert digital gold into phycisal gold', answer: 'no answer provided!" },
+		{ question: "How does Sandook Money work?", answer: "Sandook Money facilitates small savings and investment in digital gold. Users can purchase digital gold from as low as Rs. 10 and securely store it in 100% secure lockers with leading gold banks." },
 		{
-			question: 'What is the minium amount required to start investing in digital gold',
-			answer: 'no answer provided!'
-		},
-		{
-			question: 'is my instment in digital gols with sandook money safe',
-			answer: 'no answer provided!'
+			question: 'Is my investment in digital gold with Sandook Money safe?',
+			answer: 'Yes, your investment in digital gold with Sandook Money is safe. We store 99.99% pure 24k gold in your name in secure lockers, ensuring the safety and security of your holdings.'
 		},
 		{
-			question: 'is my instment in digital gols with sandook money safe',
-			answer: 'no answer provided!'
+			question: 'Can I convert my digital gold into physical gold?',
+			answer: 'Yes, you can convert your digital gold into physical gold. Sandook Money offers doorstep delivery, making it convenient for you to hold physical gold.'
 		},
 		{
-			question: 'is my instment in digital gols with sandook money safe',
-			answer: 'no answer provided!'
+			question: 'What is the minimum amount required to start investing in digital gold?',
+			answer: 'You can start your gold-saving journey with as little as Rs. 10. Sandook Money aims to make gold investing accessible to everyone.'
+		},
+		{
+			question: 'How can I track the performance of my gold investments?',
+			answer: 'Sandook Money provides real-time tracking of your gold investments. You can monitor the value of your holdings and stay updated on market trends.'
 		}
 	];
 
 	const otherOptions = [
 		{
 			heading: 'Invest in Gold',
-			summary: 'with our partner, you buy directly from the manufacyure with ...',
+			summary: 'With our partners, you buy directly from the manufacturer which ...',
 			url: '/#',
 			urlText: 'Invest Now',
 			bgcolor: '#FFF6F8',
 			color: '#222222'
 		},
 		{
-			heading: 'Reffer Your Friends',
-			summary: 'with our partner, you buy directly from the manufacyure with ...',
+			heading: 'Refer your Friends',
+			summary: 'With our partners, you buy directly from the manufacturer which ...',
 			url: '/#',
-			urlText: 'Reffer Now',
+			urlText: 'Refer Now',
 			bgcolor: '#322949',
 			color: '#FFFFFF'
 		},
 		{
 			heading: 'FAQs',
-			summary: 'with our partner, you buy directly from the manufacyure with ...',
+			summary: 'With our partners, you buy directly from the manufacturer which ...',
 			url: '/#',
-			urlText: 'View all FAQs',
+			urlText: 'View All FAQs',
 			bgcolor: '#EFEEF2',
 			color: '#222222'
 		}
@@ -56,20 +56,12 @@
 
 <section id="faqs">
 	<div>
-		<h1>Frequently Asked Questions</h1>
+		<h1>Frequently asked questions</h1>
 		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-			labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-			laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-			voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-			non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			If you have any other questions or need further assistance, our support team is available to help you. 
 		</p>
 		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-			labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-			laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-			voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-			non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			Contact us through our dedicated WhatsApp helpline or reach out to us via email or phone. We're here to support you on your financial journey with Sandook Money.
 		</p>
 	</div>
 	<div>

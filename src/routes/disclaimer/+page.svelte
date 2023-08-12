@@ -1,8 +1,8 @@
 <script>
 </script>
 
-<section id="disclaimer-statement">
-	<p>Disclaimer:</p>
+<section class="statement">
+	<p class="bold">Disclaimer:</p>
 
 	<p>
 		SANDOOK.MONEY provides gold prices obtained from sources believed to be reliable, but we do not
@@ -46,7 +46,7 @@
 
 	<p>Sandook Money Group Contact us</p>
 
-	<p>About Us</p>
+	<p class="bold">About Us</p>
 
 	<p>Our mission statement:</p>
 
@@ -57,3 +57,13 @@
 		visitors to locate the best gold prices on gold bullion.
 	</p>
 </section>
+
+<style>
+	.statement {
+		padding: 10%;
+	}
+
+	.statement .bold {
+		font-weight: bold;
+	}
+</style>

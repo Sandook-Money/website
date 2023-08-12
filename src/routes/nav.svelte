@@ -20,27 +20,17 @@
 	let navLinks = [
 		{
 			name: 'Product',
-			url: '/#',
+			url: '/#info-section',
 			icon: ''
 		},
 		{
 			name: 'About Us',
-			url: '/#',
-			icon: ArrowDownIcon
-		},
-		{
-			name: 'Careers',
-			url: '/#',
-			icon: ''
-		},
-		{
-			name: 'Gifts',
-			url: '/#',
+			url: '/#story-sandook',
 			icon: ''
 		},
 		{
 			name: 'FAQs',
-			url: '/#',
+			url: '/#faqs',
 			icon: ''
 		}
 	];
@@ -49,33 +39,23 @@
 		navLinks = [
 			{
 				name: 'What is Sandook?',
-				url: '/#',
+				url: '/#story-sandook',
 				icon: ''
 			},
 			{
 				name: 'Features',
-				url: '/#',
+				url: '/#features-investment-journy',
 				icon: startIcon
 			},
 			{
 				name: 'How this works',
-				url: '/#',
+				url: '/#how-it-works',
 				icon: hugIcon
 			},
 			{
 				name: 'Benifits',
-				url: '/#',
+				url: '/#benefits-section',
 				icon: loadingIcon
-			},
-			{
-				name: 'Know your Growth',
-				url: '/#',
-				icon: graphIcon
-			},
-			{
-				name: 'Community',
-				url: '/#',
-				icon: mashroomIcon
 			}
 		];
 	}
@@ -106,7 +86,7 @@
 		{#if isSignupButtonVisible}
 			<div class="nav-actions">
 				<div class="cta">
-					<Button textColor="black" bgColor="transparent">Sign up</Button>
+					<Button text="Sign Up Now" textColor="#222" bgColor="transparent" />
 				</div>
 			</div>
 		{/if}

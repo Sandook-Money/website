@@ -64,11 +64,7 @@
 <section id="features-of-making">
 	<h1>Features of making your investment journey easier</h1>
 	<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-		labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-		laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-		voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-		non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Explore Smart Tools and Innovations for an Effortless Investment Journey.
 	</p>
 	<img class="mobile-1" src={Mobile1} />
 	<img class="mobile-2" src={Mobile2} />
@@ -87,6 +83,8 @@
 		letter-spacing: 4.2px;
 		text-transform: uppercase;
 		text-align: left;
+		width: 100%;
+		max-width: 1190px;
 	}
 	h1 {
 		color: #222;
@@ -99,24 +97,45 @@
 		letter-spacing: -0.96px;
 		text-align: left;
 		margin-top: 0;
+		width: 100%;
+		max-width: 1190px;
 	}
 	#benefits-section {
 		display: flex;
 		flex-direction: column;
 		padding: 10%;
+		justify-content: flex-start;
+		align-items: center;
+		
 	}
 
 	#benefits-section .benefits {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
+		max-width: 1190px;
 	}
 	#benefits-section .benefits .benefit-card {
-		width: 23%;
-		border-right: 1px solid #d8d8d8;
-		padding: 5%;
-		margin-top: 50px;
-		margin-bottom: 50px;
+		width: 31%;
+		border-right: 1px solid #D8D8D8;
+		padding: 0%;
+		margin-top: 25px;
+		margin-bottom: 25px;
+		max-height: 352px;
+	}
+	#benefits-section .benefits .benefit-card:nth-child(2) {
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+	#benefits-section .benefits .benefit-card:nth-child(5) {
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+	#benefits-section .benefits .benefit-card:nth-child(3) {
+		border-right: none;
+	}
+	#benefits-section .benefits .benefit-card:nth-child(6) {
+		border-right: none;
 	}
 	#benefits-section .benefits .benefit-card h1 {
 		color: #222;
@@ -127,6 +146,7 @@
 		line-height: 42px; /* 131.25% */
 		letter-spacing: -0.64px;
 		text-align: left;
+		margin-top: 48px;
 	}
 	#benefits-section .benefits .benefit-card p {
 		color: #666;
@@ -136,6 +156,7 @@
 		font-weight: 450;
 		line-height: 24px; /* 150% */
 		text-align: left;
+		max-width: 330px;
 	}
 	#benefits-section .benefits .benefit-card .benefits-circle {
 		display: flex;

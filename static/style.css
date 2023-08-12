@@ -3,6 +3,10 @@
 	src: url('/fonts/CircularStdFont.otf') format('otf');
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	margin: 0;
 	font-family: 'Circular Std', 'Circular';

@@ -19,32 +19,20 @@
 	];
 
 	const productLinks = [
-		{ url: '/#', text: 'Save Now' },
-		{ url: '/#', text: 'Auto Pilot' },
-		{ url: '/#', text: 'Quick Withdrawals' },
-		{ url: '/#', text: 'Round Offs' },
-		{ url: '/#', text: 'Lifestyle Investing' },
-		{ url: '/#', text: 'Goals & Dreams' },
-		{ url: '/#', text: 'Gold & Dreams' },
-		{ url: '/#', text: 'Gold at Doorstep' },
-		{ url: '/#', text: 'Investment Tracking' },
-		{ url: '/#', text: 'Sandook Rewards' },
-		{ url: '/#', text: 'Gift your loved once' }
+		{ url: '/#auto-pilot', text: 'Auto Pilot' },
+		{ url: '/#quick-withdrawals', text: 'Quick Withdrawals' },
+		{ url: '/#round-off', text: 'Round Offs' },
+		{ url: '/#lifestyle-investing', text: 'Lifestyle Investing' },
 	];
 
 	const sandookLinks = [
-		{ url: '/#', text: 'About Us' },
-		{ url: '/#', text: 'Blogs' },
-		{ url: '/#', text: 'Career' },
-		{ url: '/#', text: 'In News' },
-		{ url: '/#', text: 'FAQs' }
+		{ url: '/#story-sandook', text: 'About Us' },
+		{ url: 'https://blog.sandook.money', text: 'Blogs' },
+		{ url: '/#faqs', text: 'FAQs' }
 	];
 
 	const learningLinks = [
-		{ url: '/#', text: 'How Autopilot Works' },
-		{ url: '/#', text: 'Benefits' },
-		{ url: '/#', text: 'Growth Calculator' },
-		{ url: '/#', text: 'Community' }
+		{ url: '/#how-it-works', text: 'How Autopilot Works' },
 	];
 </script>
 
@@ -90,6 +78,7 @@
 
 	<div class="legal-docs">
 		<a href="/terms">Terms &amp; Condition</a>
+		<a href="/privacy">Disclaimer!</a>
 		<a href="/privacy">Privacy Policy</a>
 	</div>
 <p>&copy; Copyright {currentYear} | <a href="/">sandook.money</a> </p>
