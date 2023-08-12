@@ -1,4 +1,6 @@
 <script>
+	export const prerender = true;
+	export const ssr = true;
 	import Image5 from '$lib/images/5.svg';
 	import Image6 from '$lib/images/6.svg';
 	import Image7 from '$lib/images/7.svg';
@@ -53,7 +55,8 @@
 		},
 		{
 			image: Image6,
-			heading: 'Experience the convenience of <span style="color: #E31C5D;">doorstep delivery</span> of physical gold',
+			heading:
+				'Experience the convenience of <span style="color: #E31C5D;">doorstep delivery</span> of physical gold',
 			summary:
 				'Experience the convenience of doorstep delivery of physical gold. Convert your digital gold into tangible assets and enjoy the pleasure of holding physical gold in your hands.',
 			quote:
@@ -113,11 +116,16 @@
 
 <section id="info-section">
 	{#each infoSection as { image, heading, summary, quote, by, reverse, bgColor }}
-		<div class="info-section-row" style="flex-direction: {reverse ? 'row-reverse':'row'}">
-			<div class="info-section-row-img" style="margin-left: {reverse ? '5%':'0%'}; background: none; background-color: {bgColor}; ">
+		<div class="info-section-row" style="flex-direction: {reverse ? 'row-reverse' : 'row'}">
+			<div
+				class="info-section-row-img"
+				style="margin-left: {reverse
+					? '5%'
+					: '0%'}; background: none; background-color: {bgColor}; "
+			>
 				<img src={image} alt="Image" />
 			</div>
-			<div class="info-section-row-content" style="padding: {reverse ? '0':''}">
+			<div class="info-section-row-content" style="padding: {reverse ? '0' : ''}">
 				<h1>{@html heading}</h1>
 				<p>
 					{summary}

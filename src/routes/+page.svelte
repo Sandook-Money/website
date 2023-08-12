@@ -10,7 +10,6 @@
 	import Button from './button.svelte';
 	import Faqs from './faqs.svelte';
 	import Benefits from './benefits.svelte';
-	import FinalChart from './final-chart.svelte';
 	
 </script>
 
@@ -44,7 +43,6 @@
 </div>
 <FeatureSection />
 <YouCanCount />
-<FinalChart />
 <Benefits />
 <Faqs />
 <RatingSection />

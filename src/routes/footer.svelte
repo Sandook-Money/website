@@ -1,4 +1,6 @@
 <script>
+	export const prerender = true;
+	export const ssr = true;
 	import FacebookIcon from '$lib/icons/fb.svg';
 	import YoutubeIcon from '$lib/icons/youtube.svg';
 	import LinkedinIcon from '$lib/icons/linkedin.svg';
@@ -26,7 +28,7 @@
 		{ url: '/#', text: 'Gold at Doorstep' },
 		{ url: '/#', text: 'Investment Tracking' },
 		{ url: '/#', text: 'Sandook Rewards' },
-		{ url: '/#', text: 'Gift your loved once' },
+		{ url: '/#', text: 'Gift your loved once' }
 	];
 
 	const sandookLinks = [
@@ -34,14 +36,14 @@
 		{ url: '/#', text: 'Blogs' },
 		{ url: '/#', text: 'Career' },
 		{ url: '/#', text: 'In News' },
-		{ url: '/#', text: 'FAQs' },
+		{ url: '/#', text: 'FAQs' }
 	];
 
 	const learningLinks = [
 		{ url: '/#', text: 'How Autopilot Works' },
 		{ url: '/#', text: 'Benefits' },
 		{ url: '/#', text: 'Growth Calculator' },
-		{ url: '/#', text: 'Community' },
+		{ url: '/#', text: 'Community' }
 	];
 </script>
 
@@ -123,16 +125,16 @@
 <style>
 	a {
 		text-decoration: none;
-        color: #666666;
+		color: #666666;
 	}
 
-    a:visited {
-        color: #666666;
-    }
+	a:visited {
+		color: #666666;
+	}
 
-    a:active {
-        color: #666666;
-    }
+	a:active {
+		color: #666666;
+	}
 
 	footer {
 		padding: 5%;
@@ -158,10 +160,10 @@
 	footer .social .social-icons a {
 		margin-right: 15px;
 	}
-    footer .social .social-icons a img {
-        width: 24px;
-        height: 24px;
-    }
+	footer .social .social-icons a img {
+		width: 24px;
+		height: 24px;
+	}
 	footer .links {
 		width: 23.3333333333%;
 		display: flex;

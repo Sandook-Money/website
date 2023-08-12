@@ -1,4 +1,6 @@
 <script>
+	export const prerender = true;
+	export const ssr = true;
 	import SectionHeading from './heading.svelte';
 	import Box1Vector from '$lib/images/12.svg';
 	import image1 from '$lib/images/1.svg';
@@ -48,7 +50,14 @@
 				<Button text="Coming Soon" />
 				<h1>Embrace a new way of investing with Sandook's lifestyle reward investing feature.</h1>
 				<div class="icons">
-					<Button btnClass='sign-up-now' left='38%' position='absolute' bgColor='transparent' textColor='#000' text="Sign Up Now" />
+					<Button
+						btnClass="sign-up-now"
+						left="38%"
+						position="absolute"
+						bgColor="transparent"
+						textColor="#000"
+						text="Sign Up Now"
+					/>
 					<span class="icon-box danzo-icon">
 						<img src={Danzo} alt="Danzo Icon" />
 					</span>
@@ -75,12 +84,13 @@
 			</div>
 			<div class="box4">
 				<div class="box4-row">
-				<p>Round Offs</p>
-				<Button bgColor="#631167" text="Coming Soon" />
+					<p>Round Offs</p>
+					<Button bgColor="#631167" text="Coming Soon" />
 				</div>
 				<h1>Watch your savings grow effortlessly with round-offs</h1>
 				<p>
-					Every transaction becomes an opportunity to save, as spare change is allocated towards your gold investments.
+					Every transaction becomes an opportunity to save, as spare change is allocated towards
+					your gold investments.
 				</p>
 				<img src={image13} alt="" />
 			</div>

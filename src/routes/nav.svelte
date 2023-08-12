@@ -1,4 +1,6 @@
 <script>
+	export const prerender = true;
+	export const ssr = true;
 	import homeIcon from '$lib/icons/home.svg';
 	import startIcon from '$lib/icons/star.svg';
 	import loadingIcon from '$lib/icons/loading.svg';

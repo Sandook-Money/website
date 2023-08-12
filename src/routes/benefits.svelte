@@ -1,4 +1,6 @@
 <script>
+	export const prerender = true;
+	export const ssr = true;
 	import walletIcon from '$lib/icons/wallet.svg';
 	import sendMsgIcon from '$lib/icons/send-mdg.svg';
 	import DownloadIcon from '$lib/icons/download.svg';
@@ -157,7 +159,7 @@
 	}
 	#features-of-making p {
 		width: 50%;
-        color: #666;
+		color: #666;
 	}
 	#features-of-making h1 {
 		color: #441a9e;
@@ -167,24 +169,24 @@
 		font-weight: 700;
 		line-height: 114%; /* 54.72px */
 		letter-spacing: -0.96px;
-        width: 700px;
+		width: 700px;
 	}
 	.mobile-1 {
 		position: absolute;
 		left: 0;
 		bottom: 4%;
-        width: 25%;
+		width: 25%;
 	}
 	.mobile-2 {
 		position: absolute;
 		right: 40%;
 		bottom: 0;
-        width: 25%;
+		width: 25%;
 	}
 	.mobile-3 {
 		position: absolute;
 		right: 10%;
 		bottom: 0;
-        width: 25%;
+		width: 25%;
 	}
 </style>

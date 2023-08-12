@@ -1,11 +1,13 @@
 <script>
-    import PlusIcon from '$lib/icons/plus.svg';
+	export const prerender = true;
+	export const ssr = true;
+	import PlusIcon from '$lib/icons/plus.svg';
 	const faqs = [
 		{
 			question: 'is my instment in digital gols with sandook money safe',
 			answer: 'no answer provided!'
 		},
-		{ question: 'Can i convert digital gold into phycisal gold\', answer: \'no answer provided!' },
+		{ question: "Can i convert digital gold into phycisal gold', answer: 'no answer provided!" },
 		{
 			question: 'What is the minium amount required to start investing in digital gold',
 			answer: 'no answer provided!'
@@ -53,7 +55,7 @@
 </script>
 
 <section id="faqs">
-	<div >
+	<div>
 		<h1>Frequently Asked Questions</h1>
 		<p>
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -73,11 +75,12 @@
 	<div>
 		{#each faqs as { question, answer }}
 			<div class="faqs-ans">
-                <div class="faq-ques">
-    				<h1>{question}</h1><img class="plus-icon" src={PlusIcon}/>
-                </div>
-                <p>{answer}</p>
-				<hr>
+				<div class="faq-ques">
+					<h1>{question}</h1>
+					<img class="plus-icon" src={PlusIcon} />
+				</div>
+				<p>{answer}</p>
+				<hr />
 			</div>
 		{/each}
 	</div>
@@ -94,55 +97,54 @@
 </section>
 
 <style>
-    #faqs {
-        display: flex;
-        flex-direction: row;
-        padding: 5%;
-    }
-    #faqs div {
-        width: 30%
-    }
-    #faqs div:last-child .faqs-ans {
-        width: 100%;
-    }
-    .faq-ques {
-        width: 100% !important;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    #faqs div:last-child {
-        width: 70%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 5%;
-    }
-    #others-faqs-section {
-        display: flex;
+	#faqs {
+		display: flex;
 		flex-direction: row;
-        padding: 5%;
-       
-    }
+		padding: 5%;
+	}
+	#faqs div {
+		width: 30%;
+	}
+	#faqs div:last-child .faqs-ans {
+		width: 100%;
+	}
+	.faq-ques {
+		width: 100% !important;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	#faqs div:last-child {
+		width: 70%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 5%;
+	}
+	#others-faqs-section {
+		display: flex;
+		flex-direction: row;
+		padding: 5%;
+	}
 	.others-faqs {
 		display: flex;
 		flex-direction: column;
 		width: 33%;
 		padding: 5%;
 		margin: 0.33%;
-        border-radius: 16px;
+		border-radius: 16px;
 	}
 	p {
 		opacity: 0.8;
 	}
-    a {
-        border-bottom-color: #E31C5D;
-        border-bottom-style: solid;
-        border-bottom-width: 1px;
-        padding-bottom: 10px;
-        text-decoration: none;
-    }
+	a {
+		border-bottom-color: #e31c5d;
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		padding-bottom: 10px;
+		text-decoration: none;
+	}
 </style>

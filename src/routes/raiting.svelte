@@ -1,4 +1,6 @@
 <script>
+	export const prerender = true;
+	export const ssr = true;
 	import StartIcon from '$lib/icons/start-white.svg';
 	import HalfStartIcon from '$lib/icons/half-star.svg';
 	import Rating1 from '$lib/images/rating-1.svg';
@@ -182,7 +184,7 @@
 		line-height: 114%; /* 45.6px */
 		letter-spacing: -0.8px;
 	}
-    #story-sandook p {
+	#story-sandook p {
 		margin-top: 0;
 		font-family: Circular Std;
 		color: rgba(0, 0, 0, 0.6);

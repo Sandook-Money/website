@@ -29,8 +29,10 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@sveltejs/adapter-static": "^2.0.3",
 		"bootstrap": "^5.3.1",
 		"chart.js": "^4.3.3",
-		"d3-scale": "^4.0.2"
+		"d3-scale": "^4.0.2",
+		"sveltekit-adapter-aws": "^4.5.1"
 	}
 }
