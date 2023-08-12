@@ -34,5 +34,8 @@
 		"chart.js": "^4.3.3",
 		"d3-scale": "^4.0.2",
 		"sveltekit-adapter-aws": "^4.5.1"
+	},
+	"volta": {
+		"node": "18.12.1"
 	}
 }
