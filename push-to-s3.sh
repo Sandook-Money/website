@@ -1,0 +1,1 @@
+aws s3 cp build/ s3://sandook.money --recursive --profile sandook
