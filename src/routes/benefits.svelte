@@ -79,7 +79,7 @@
 	p:nth-child(1) {
 		color: #441a9e;
 		text-align: center;
-		font-family: Circular Std;
+		font-family: Circular;
 		font-size: 14px;
 		font-style: normal;
 		font-weight: 700;
@@ -91,7 +91,7 @@
 	h1 {
 		color: #222;
 		text-align: center;
-		font-family: Circular Std;
+		font-family: Circular;
 		font-size: 48px;
 		font-style: normal;
 		font-weight: 700;
@@ -120,7 +120,7 @@
 	}
 	#benefits-section .benefits .benefit-card h1 {
 		color: #222;
-		font-family: Circular Std;
+		font-family: Circular;
 		font-size: 32px;
 		font-style: normal;
 		font-weight: 700;
@@ -130,7 +130,7 @@
 	}
 	#benefits-section .benefits .benefit-card p {
 		color: #666;
-		font-family: Circular Std;
+		font-family: Circular;
 		font-size: 16px;
 		font-style: normal;
 		font-weight: 450;
@@ -163,7 +163,7 @@
 	}
 	#features-of-making h1 {
 		color: #441a9e;
-		font-family: Circular Std;
+		font-family: Circular;
 		font-size: 48px;
 		font-style: normal;
 		font-weight: 700;

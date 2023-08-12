@@ -104,7 +104,7 @@
 		flex-direction: row;
 		justify-content: center;
 		align-items: flex-start;
-		font-family: 'Circular Std';
+		font-family: 'Circular';
 		padding: 10%;
 		padding-top: 0%;
 		color: #222222;
@@ -298,7 +298,7 @@
 	.curved-div p {
 		color: #222;
 		text-align: center;
-		font-family: Circular Std;
+		font-family: Circular;
 		font-size: 16px;
 		font-style: normal;
 		font-weight: 450;
@@ -308,7 +308,7 @@
 	.curved-div h1 {
 		color: #222;
 		text-align: center;
-		font-family: Circular Std;
+		font-family: Circular;
 		font-size: 32px;
 		font-style: bold;
 		font-weight: 450;

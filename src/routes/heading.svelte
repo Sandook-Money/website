@@ -28,7 +28,7 @@
 		margin: 0;
 		color: #111111;
 		font-size: 48px;
-		font-family: 'Circular Std';
+		font-family: 'Circular';
 		font-weight: bolder;
 		width: 489px;
 	}

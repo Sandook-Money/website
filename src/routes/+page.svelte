@@ -1,5 +1,5 @@
 <script>
-	import NavBar from './nav.svelte';
+    import NavBar from './nav.svelte';
 	import Footer from './footer.svelte';
 	import FeatureSection from './features.svelte';
 	import RatingSection from './raiting.svelte';
@@ -12,7 +12,6 @@
 	import Benefits from './benefits.svelte';
 	
 </script>
-
 <div id="main-top">
 	<NavBar navId={'main-nav'} isLogoVisible={true} isSignupButtonVisible={true} />
 	<div style="display: grid; justify-content: center;">
@@ -50,13 +49,7 @@
 
 <style>
 	#main-top {
-		background: rgb(238, 200, 239);
-		background: linear-gradient(
-			243deg,
-			rgba(238, 200, 239, 1) 0%,
-			rgba(241, 235, 222, 1) 35%,
-			rgba(225, 216, 243, 1) 100%
-		);
+		background: linear-gradient(216deg, #EEC8EF 0%, #F1EBDE 50%, #E1D8F3 100%);
 		height: 726px;
 		overflow: hidden;
 		position: relative;

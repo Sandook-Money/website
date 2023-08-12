@@ -198,7 +198,7 @@
 		background: radial-gradient(circle, rgba(54, 20, 124, 1) 0%, rgba(68, 26, 158, 1) 78%);
 		color: #ffffff;
 		padding: 10%;
-		font-family: 'Circular Std';
+		font-family: 'Circular';
 	}
 
 	.heading {
@@ -220,7 +220,7 @@
 	.list {
 		display: flex;
 		flex-direction: row;
-		font-family: 'Circular Std';
+		font-family: 'Circular';
 	}
 	.list-box {
 		width: 33.33%;
@@ -249,7 +249,7 @@
 	}
 	#how-it-works .top-heading .top-heading-text h1 {
 		color: #222;
-		font-family: Circular Std;
+		font-family: Circular;
 		font-size: 40px;
 		font-style: normal;
 		font-weight: 700;
@@ -259,7 +259,7 @@
 	}
 	#how-it-works .top-heading .top-heading-text p {
 		color: #222;
-		font-family: Circular Std;
+		font-family: Circular;
 		font-size: 16px;
 		font-style: normal;
 		font-weight: 450;
@@ -307,7 +307,7 @@
 	}
 	#how-it-works .how-it-works-content-card .how-it-works-content-summary p:nth-child(1) {
 		color: #e31c5d;
-		font-family: Circular Std;
+		font-family: Circular;
 		font-size: 16px;
 		font-style: normal;
 		font-weight: 450;
@@ -318,7 +318,7 @@
 	}
 	#how-it-works .how-it-works-content-card .how-it-works-content-summary h1 {
 		color: #222;
-		font-family: Circular Std;
+		font-family: Circular;
 		font-size: 32px;
 		font-style: normal;
 		font-weight: 700;
@@ -328,7 +328,7 @@
 	}
 	#how-it-works .how-it-works-content-card .how-it-works-content-summary p {
 		color: #666;
-		font-family: Circular Std;
+		font-family: Circular;
 		font-size: 16px;
 		font-style: normal;
 		font-weight: 450;
@@ -350,7 +350,7 @@
 	}
 	#unlock-section .unlock-section-left h1 {
 		color: #fff;
-		font-family: Circular Std;
+		font-family: Circular;
 		font-size: 40px;
 		font-style: normal;
 		font-weight: 700;
@@ -360,7 +360,7 @@
 	}
 	#unlock-section .unlock-section-left p {
 		color: rgba(255, 255, 255, 0.6);
-		font-family: Circular Std;
+		font-family: Circular;
 		font-size: 16px;
 		font-style: normal;
 		font-weight: 450;
@@ -415,7 +415,7 @@
 	}
 	.info-section-row-content h1 {
 		color: #222;
-		font-family: Circular Std;
+		font-family: Circular;
 		font-size: 40px;
 		font-style: normal;
 		font-weight: 700;
