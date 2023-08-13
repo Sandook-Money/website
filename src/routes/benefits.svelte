@@ -106,6 +106,7 @@
 		padding: 10%;
 		justify-content: flex-start;
 		align-items: center;
+		background: #fff;
 		
 	}
 

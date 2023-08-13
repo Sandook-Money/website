@@ -93,6 +93,7 @@
 		display: flex;
 		flex-direction: row;
 		padding: 5%;
+		background: #fff;
 	}
 	#faqs div {
 		width: 30%;
@@ -120,6 +121,7 @@
 		display: flex;
 		flex-direction: row;
 		padding: 5%;
+		background: #fff;
 	}
 	.others-faqs {
 		display: flex;

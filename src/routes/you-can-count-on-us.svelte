@@ -199,6 +199,7 @@
 		color: #ffffff;
 		padding: 10%;
 		font-family: 'Circular';
+		
 	}
 
 	.heading {
@@ -385,6 +386,7 @@
 		justify-content: center;
 		align-items: center;
 		padding: 10%;
+		background: #fff;
 	}
 	#info-section .info-section-row {
 		display: flex;
