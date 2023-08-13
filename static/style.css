@@ -10,6 +10,7 @@ html {
 body {
 	margin: 0;
 	font-family: 'Circular Std', 'Circular';
+	background: blanchedalmond;
 }
 
 .button-primary {
@@ -45,4 +46,14 @@ body {
 }
 input {
 	padding: 10px;
+}
+
+.main-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.container {
+	max-width: 1440px;
 }

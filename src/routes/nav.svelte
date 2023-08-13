@@ -92,7 +92,9 @@
 		{#if isSignupButtonVisible}
 			<div class="nav-actions">
 				<div class="cta">
-					<a class="button-primary button-style-1" on:click={() => (modalVisible = true)} href="#"> Sign Up Now</a>
+					<a class="button-primary button-style-1" on:click={() => (modalVisible = true)} href="#">
+						Sign Up Now</a
+					>
 				</div>
 			</div>
 		{/if}
@@ -102,12 +104,10 @@
 
 <style>
 	#main-nav-secondary-container {
-		width: 992px;
+		width: 549px;
+		box-shadow: 0px 10px 40px 0px rgba(38, 43, 49, 0.07);
 	}
-	#main-nav-secondary-container .nav-links {
-		width: 100%;
-	}
-
+	
 	#main-nav {
 		display: flex;
 		flex-direction: row;
@@ -115,9 +115,13 @@
 		padding: 20px;
 		padding-left: 5%;
 		padding-right: 5%;
+	}
+	#main-nav-container {
+		padding: 20px;
 		width: 100%;
 	}
-
+	
+	
 	#main-nav-secondary {
 		display: flex;
 		flex-direction: row;
@@ -129,7 +133,7 @@
 		border-color: #f8f8fb;
 		border-width: 1px;
 		border-style: solid;
-		width: 100%;
+		width: 549px;
 	}
 	.nav-links .link {
 		display: flex;
@@ -138,7 +142,7 @@
 		align-items: center;
 	}
 	.nav-links {
-		width: 60%;
+		width: 1017px;
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
@@ -177,5 +181,4 @@
 		flex-direction: row;
 		justify-content: center;
 	}
-	
 </style>

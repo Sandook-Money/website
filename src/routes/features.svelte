@@ -99,6 +99,9 @@
 </section>
 
 <style>
+	#features-investment-journy {
+		background: #FFF;
+	}
 	.all-features-sections {
 		display: flex;
 		flex-direction: row;
@@ -108,6 +111,7 @@
 		padding: 10%;
 		padding-top: 0%;
 		color: #222222;
+		
 	}
 	.left-section {
 		width: 40%;
