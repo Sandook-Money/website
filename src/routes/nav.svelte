@@ -1,6 +1,7 @@
 <script>
 	export const prerender = true;
 	export const ssr = true;
+
 	import homeIcon from '$lib/icons/home.svg';
 	import startIcon from '$lib/icons/star.svg';
 	import loadingIcon from '$lib/icons/loading.svg';
@@ -16,6 +17,11 @@
 	export let isSignupButtonVisible = false;
 	export let navId = 'main-nav';
 	export let menuType = 'primary';
+	let modalVisible = false;
+	import SignUpModel from './signup-model.svelte';
+	function showModal() {
+		modalVisible = true;
+	}
 
 	let navLinks = [
 		{
@@ -86,12 +92,13 @@
 		{#if isSignupButtonVisible}
 			<div class="nav-actions">
 				<div class="cta">
-					<Button text="Sign Up Now" textColor="#222" bgColor="transparent" />
+					<a class="button-primary button-style-1" on:click={() => (modalVisible = true)} href="#"> Sign Up Now</a>
 				</div>
 			</div>
 		{/if}
 	</div>
 </div>
+<SignUpModel showModal={modalVisible} />
 
 <style>
 	#main-nav-secondary-container {
@@ -170,4 +177,5 @@
 		flex-direction: row;
 		justify-content: center;
 	}
+	
 </style>

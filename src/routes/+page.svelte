@@ -10,7 +10,11 @@
 	import Button from './button.svelte';
 	import Faqs from './faqs.svelte';
 	import Benefits from './benefits.svelte';
-	
+	let modalVisible = false;
+	import SignUpModel from './signup-model.svelte';
+	function showModal() {
+		modalVisible = true;
+	}
 </script>
 <div id="main-top">
 	<NavBar navId={'main-nav'} isLogoVisible={true} isSignupButtonVisible={true} />
@@ -36,7 +40,7 @@
 			<img src={AugmontLogo} alt="Augmont Logo" />
 			<img src={PhonepayLogo} alt="Phonepay Logo" />
 		</div>
-		<Button text="Sing Up Now" />
+		<a class="button-primary button-style-2" on:click={() => (modalVisible = true)}>Sign Up Now</a>
 	</div>
 	<img id="main-banner-mobile-app-img" src={MainBannerMobileImg} alt="main-app-demo" />
 </div>
@@ -46,7 +50,7 @@
 <Faqs />
 <RatingSection />
 <Footer />
-
+<SignUpModel showModal={modalVisible} />
 <style>
 	#main-top {
 		background: linear-gradient(216deg, #EEC8EF 0%, #F1EBDE 50%, #E1D8F3 100%);
