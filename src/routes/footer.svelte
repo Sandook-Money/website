@@ -78,7 +78,7 @@
 
 	<div class="legal-docs">
 		<a href="/terms">Terms &amp; Condition</a>
-		<a href="/privacy">Disclaimer!</a>
+		<a href="/disclaimer">Disclaimer!</a>
 		<a href="/privacy">Privacy Policy</a>
 	</div>
 <p>&copy; Copyright {currentYear} | <a href="/">sandook.money</a> </p>
