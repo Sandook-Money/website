@@ -25,28 +25,26 @@
 	</div>
 	<div>
 		<p>
-			Welcome to Sandook, the groundbreaking mobile app that empowers you to unlock your financial potential through seamless and rewarding gold saving and investing. We understand that financial management and wealth creation are crucial aspects of securing a prosperous future. That's why we've designed Sandook to simplify your investment journey and provide easy access to digital gold.
-
-With Sandook, you can start your gold-saving adventure with as little as Rs. 10, making it accessible to everyone, regardless of their financial capacity. Our platform offers a user-friendly interface, ensuring a smooth onboarding experience that takes less than 30 seconds.
-
-Experience the power of our innovative features, such as AutoPay, which enables automatic daily deductions for consistent savings, and the round-off method, allowing you to grow your savings... Read More
+			Welcome to Sandook, the groundbreaking mobile app that empowers you to unlock your financial
+			potential through seamless and rewarding gold saving and investing. We understand that
+			financial management and wealth creation are crucial aspects of securing a prosperous future.
+			That's why we've designed Sandook to simplify your investment journey and provide easy access
+			to digital gold.
 		</p>
 		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-			labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-			laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-			voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-			non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			With Sandook, you can start your gold-saving adventure with as little as Rs. 10, making it
+			accessible to everyone, regardless of their financial capacity. Our platform offers a
+			user-friendly interface, ensuring a smooth onboarding experience that takes less than 30
+			seconds.
 		</p>
 		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-			labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-			laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-			voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-			non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			Experience the power of our innovative features, such as AutoPay, which enables automatic
+			daily deductions for consistent savings, and the round-off method, allowing you to grow your
+			savings.
 		</p>
 	</div>
 </section>
+
 <!-- <section>
 	<div id="rating-section">
 		<div class="platfroms">
@@ -161,6 +159,16 @@ Experience the power of our innovative features, such as AutoPay, which enables 
 		align-items: flex-start;
 		padding: 10%;
 		min-height: 384px;
+	}
+
+	#story-sandook h1 {
+		color: rgba(0, 0, 0, 0.6);
+		font-family: Circular;
+		font-size: 40px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 114%; /* 45.6px */
+		letter-spacing: -0.8px;
 	}
 
 	#story-sandook .boxes {
