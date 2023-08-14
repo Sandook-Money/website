@@ -5,6 +5,7 @@ on:
 env:
   AWS_REGION: ap-south-1
   DISTRIBUTION: E2GH7VZCW8MDM6
+  DISTRIBUTION_CALCULATOR: E6HAFLM2ID2V0
 jobs:
   deploy:
     name: Deploy
@@ -31,10 +32,22 @@ jobs:
     - name: upload to S3
       run: aws s3 cp build/ s3://sandook.money --recursive
     
+    - name: upload Calclator to S3
+      run: aws s3 cp chartjs/ s3://calculator-sandook-app --recursive
+    
     - name: Invalidate CloudFront
       uses: chetan/invalidate-cloudfront-action@v2
       env:
         DISTRIBUTION: ${{ env.DISTRIBUTION }}
+        PATHS: "/*"
+        AWS_REGION: "ap-south-1"
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+    
+    - name: Invalidate Calculator CloudFront
+      uses: chetan/invalidate-cloudfront-action@v2
+      env:
+        DISTRIBUTION: ${{ env.DISTRIBUTION_CALCULATOR }}
         PATHS: "/*"
         AWS_REGION: "ap-south-1"
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}

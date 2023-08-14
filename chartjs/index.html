@@ -5,20 +5,20 @@
 		<input type="range" min="1" max="100" id="rate" value="10" /> :
 		<span id="rate-percent">0 %</span>
 
-		<p>Daily Amount (in ₹)</p>
+		<p>Daily Amount (in INR)</p>
 		<input type="range" min="100" max="1000" id="daily-amount" value="500" /> :
-		<span id="amountValue">₹ 0</span>
+		<span id="amountValue">INR 0</span>
 
 		<p>Time (in Years)</p>
 		<input type="range" min="1" max="20" id="duration" value="15" /> :
-		<span id="durationValue">₹ 0</span>
+		<span id="durationValue">INR 0</span>
 		<br />
 		<strong>Invested Amount:</strong> <br />
-		<p id="invested-amount">₹ 0</p>
+		<p id="invested-amount">INR 0</p>
 		<strong>Estimated Returns:</strong> <br />
-		<p id="estimated-returns">₹ 0</p>
+		<p id="estimated-returns">INR 0</p>
 		<strong>Total Return on Gold:</strong> <br />
-		<p id="total-return-on-gold">₹ 0</p>
+		<p id="total-return-on-gold">INR 0</p>
 	</div>
 </div>
 
@@ -28,7 +28,7 @@
 <script>
 	document.querySelector('#rate-percent').innerHTML = document.querySelector('#rate').value + ' %';
 	document.querySelector('#amountValue').innerHTML =
-		'₹ ' + document.querySelector('#daily-amount').value;
+		'INR ' + document.querySelector('#daily-amount').value;
 
 	document.querySelector('#durationValue').innerHTML =
 		'' + document.querySelector('#duration').value + ' Years';
@@ -36,22 +36,22 @@
 	function cal(amount) {
 		let duration = document.querySelector('#duration').value;
 
-		document.querySelector('#amountValue').innerHTML = '₹ ' + amount;
+		document.querySelector('#amountValue').innerHTML = 'INR ' + amount;
 
 		document.querySelector('#durationValue').innerHTML = '' + duration + ' Years';
 
 		document.querySelector('#invested-amount').innerHTML =
-			'₹ ' + parseInt(amount) * parseInt(duration * 365);
+			'INR ' + parseInt(amount) * parseInt(duration * 365);
 		const investedAtm = parseInt(
 			document.querySelector('#invested-amount').innerHTML.split(' ')[1]
 		);
 		const investedAmountReturn =
 			investedAtm * (parseInt(document.querySelector('#rate').value) / 100) + investedAtm;
 		console.log(investedAmountReturn);
-		document.querySelector('#estimated-returns').innerHTML = '₹ ' + investedAmountReturn;
+		document.querySelector('#estimated-returns').innerHTML = 'INR ' + investedAmountReturn;
 
 		document.querySelector('#total-return-on-gold').innerHTML =
-			'₹ ' + Math.round(investedAmountReturn - investedAtm);
+			'INR ' + Math.round(investedAmountReturn - investedAtm);
         drawGraph([]);
 	}
 	let dailyAmount = document.querySelector('#daily-amount');
