@@ -1,0 +1,146 @@
+<div>
+	<canvas id="myChart"></canvas>
+	<div>
+		<p>Gold Rate Increment/ Year</p>
+		<input type="range" min="1" max="100" id="rate" value="10" /> :
+		<span id="rate-percent">0 %</span>
+
+		<p>Daily Amount (in ₹)</p>
+		<input type="range" min="100" max="1000" id="daily-amount" value="500" /> :
+		<span id="amountValue">₹ 0</span>
+
+		<p>Time (in Years)</p>
+		<input type="range" min="1" max="20" id="duration" value="15" /> :
+		<span id="durationValue">₹ 0</span>
+		<br />
+		<strong>Invested Amount:</strong> <br />
+		<p id="invested-amount">₹ 0</p>
+		<strong>Estimated Returns:</strong> <br />
+		<p id="estimated-returns">₹ 0</p>
+		<strong>Total Return on Gold:</strong> <br />
+		<p id="total-return-on-gold">₹ 0</p>
+	</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@^3"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+
+<script>
+	document.querySelector('#rate-percent').innerHTML = document.querySelector('#rate').value + ' %';
+	document.querySelector('#amountValue').innerHTML =
+		'₹ ' + document.querySelector('#daily-amount').value;
+
+	document.querySelector('#durationValue').innerHTML =
+		'' + document.querySelector('#duration').value + ' Years';
+
+	function cal(amount) {
+		let duration = document.querySelector('#duration').value;
+
+		document.querySelector('#amountValue').innerHTML = '₹ ' + amount;
+
+		document.querySelector('#durationValue').innerHTML = '' + duration + ' Years';
+
+		document.querySelector('#invested-amount').innerHTML =
+			'₹ ' + parseInt(amount) * parseInt(duration * 365);
+		const investedAtm = parseInt(
+			document.querySelector('#invested-amount').innerHTML.split(' ')[1]
+		);
+		const investedAmountReturn =
+			investedAtm * (parseInt(document.querySelector('#rate').value) / 100) + investedAtm;
+		console.log(investedAmountReturn);
+		document.querySelector('#estimated-returns').innerHTML = '₹ ' + investedAmountReturn;
+
+		document.querySelector('#total-return-on-gold').innerHTML =
+			'₹ ' + Math.round(investedAmountReturn - investedAtm);
+        drawGraph([]);
+	}
+	let dailyAmount = document.querySelector('#daily-amount');
+
+	dailyAmount.addEventListener('change', function (event) {
+		cal(event.target.value);
+	});
+
+	document.querySelector('#duration').addEventListener('change', function (event) {
+		document.querySelector('#durationValue').innerHTML = '' + event.target.value + ' Years';
+		cal(document.querySelector('#daily-amount').value);
+	});
+
+	document.querySelector('#rate').addEventListener('change', function (event) {
+		document.querySelector('#rate-percent').innerHTML = event.target.value + ' %';
+		document.querySelector('#durationValue').innerHTML = '' + event.target.value + ' Years';
+		cal(document.querySelector('#daily-amount').value);
+	});
+
+	cal(document.querySelector('#daily-amount').value);
+
+	console.log(dailyAmount.value);
+
+	function drawGraph(data) {
+        console.log('draw');
+        
+		const ctx = document.getElementById('myChart');
+
+		new Chart(ctx, {
+			type: 'line',
+			data: {
+				labels: ['Return in Lakhs', 'Investment in Lakhs'],
+				datasets: [
+					{
+						label: 'Return in Lakhs',
+						data: [
+							{ x: 15, y: 4000000 },
+							{ x: 20, y: 4500000 }
+						],
+						borderColor: '#E31C5D',
+						yAxisID: 'y'
+					},
+					{
+						label: 'Investment in Lakhs',
+						data: [
+							{ x: 0, y: 2700000 },
+							{ x: 10, y: 5000000 }
+						],
+						borderColor: '#E6DAFF',
+						yAxisID: 'y1'
+					}
+				]
+			},
+			options: {
+				responsive: true,
+				stacked: false,
+				plugins: {
+					title: {
+						display: true,
+						text: 'Digital Gold Return Over 20 Years'
+					}
+				},
+				scales: {
+					y: {
+						type: 'linear',
+						display: true,
+						position: 'left',
+						min: 0,
+						max: 5000000
+					},
+					y1: {
+						type: 'linear',
+						display: false,
+						position: 'left',
+						min: 0,
+						max: 5000000
+					},
+					x: {
+						type: 'linear',
+						display: true,
+						position: 'bottom',
+						min: 0,
+						max: 20,
+						grid: {
+							drawOnChartArea: false // only want the grid lines for one axis to show up
+						}
+					}
+				}
+			}
+		});
+	}
+</script>

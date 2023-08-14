@@ -44,7 +44,9 @@
 		}
 	];
 </script>
-
+<section id="calculator">
+	<iframe src="https://calculator.sandook.money" frameborder="0"></iframe>
+</section>
 <section id="benefits-section">
 	<p>Benefits</p>
 	<h1>Experience crafted for you</h1>
@@ -72,6 +74,18 @@
 </section>
 
 <style>
+	#calculator {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background: #FFF;
+		padding: 100px 130px 100px 130px;
+	}
+	#calculator iframe {
+		width: 1180px;
+		height: 1055px;
+	}
 	p:nth-child(1) {
 		color: #441a9e;
 		text-align: center;
