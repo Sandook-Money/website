@@ -50,7 +50,7 @@
 		<div class="right-section">
 			<div id="lifestyle-investing" class="box3">
 				<p>Lifestyle Investing</p>
-				<Button text="Coming Soon" />
+				<a href="#" class="button-primary button-style-2">Coming Soon</a>
 				<h1>Embrace a new way of investing with Sandook's lifestyle reward investing feature.</h1>
 				<div class="icons">
 					<Button
@@ -178,12 +178,26 @@
 		width: 100%;
 		text-align: left;
 		color: #222222;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 450;
+		line-height: 114%; /* 18.24px */
+		letter-spacing: -0.32px;
 		margin: 0;
-		margin-bottom: 20px;
+	}
+	.box1 p:nth-child(3) {
+		color: #222;
+		opacity: 0.5;
 	}
 	.box1 h1 {
+		font-size: 32px;
+		font-style: normal;
+		font-weight: 450;
+		line-height: 42px; /* 131.25% */
+		letter-spacing: -0.64px;
 		margin: 0;
-		margin-bottom: 20px;
+		margin-top: 12px;
+		margin-bottom: 12px;
 	}
 
 	.box1 .image {
@@ -203,6 +217,7 @@
 		bottom: 0;
 		width: 100%;
 		z-index: 0;
+		scale: 1.5;
 	}
 	.box1 img {
 		position: absolute;
@@ -225,8 +240,45 @@
 			linear-gradient(180deg, rgba(255, 247, 230, 0) 0%, #fff7e6 100%);
 		overflow: hidden;
 	}
+	.box3 a {
+		text-decoration: none;
+		width: 75px;
+		height: 11px;
+		color: #fff;
+		font-family: Circular;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+		display: flex;
+		padding: 6px 20px;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+	}
+	.box3 p {
+		color: #222;
+		text-align: center;
+		font-family: Circular;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 450;
+		line-height: 114%; /* 18.24px */
+		letter-spacing: -0.32px;
+	}
 	.box3 h1 {
 		text-align: center;
+		color: #222;
+		text-align: center;
+		font-family: Circular;
+		font-size: 32px;
+		font-style: normal;
+		font-weight: 450;
+		line-height: 42px; /* 131.25% */
+		letter-spacing: -0.64px;
+		margin: 0;
+		margin-top: 12px;
 	}
 	.icons {
 		position: relative;
