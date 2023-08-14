@@ -3,9 +3,9 @@
 	export const ssr = true;
 	import SectionHeading from './heading.svelte';
 	import Box1Vector from '$lib/images/12.svg';
-	import image1 from '$lib/images/1.svg';
+	import image1 from '$lib/images/1.png';
 	import Button from './button.svelte';
-	import image13 from '$lib/images/13.svg';
+	import image13 from '$lib/images/13.png';
 
 	import Danzo from '$lib/icons/danzo.png';
 	import Hoststart from '$lib/icons/hotstart.png';
@@ -17,7 +17,10 @@
 </script>
 
 <section id="features-investment-journy">
-	<SectionHeading section="Features" heading="Make your investment journy easier" />
+	<div class="heading">
+		<p>Features</p>
+		<h1>Make Your Investment Journy Easier</h1>
+	</div>
 	<div class="all-features-sections">
 		<div class="left-section">
 			<div id="auto-pilot" class="box1">
@@ -99,35 +102,63 @@
 </section>
 
 <style>
+	.heading {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding-top: 100px;
+		margin-bottom: 52px;
+	}
+	.heading p {
+		color: #441a9e;
+		font-size: 14px;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin: 0;
+	}
+	.heading h1 {
+		margin: 0;
+		color: #111111;
+		font-size: 48px;
+		font-family: 'Circular';
+		font-weight: bolder;
+		width: 510px;
+		height: 110px;
+		text-align: center;
+		text-transform: capitalize;
+	}
 	#features-investment-journy {
-		background: #FFF;
+		background: #fff;
 	}
 	.all-features-sections {
 		display: flex;
 		flex-direction: row;
-		justify-content: center;
+		justify-content: flex-start;
 		align-items: flex-start;
 		font-family: 'Circular';
-		padding: 10%;
+		padding: 0 125px 100px 125px;
 		padding-top: 0%;
+
 		color: #222222;
-		
 	}
 	.left-section {
-		width: 40%;
+		width: 575px;
+		margin-right: 20px;
 	}
 	.right-section {
-		width: 40%;
-		margin-left: 5%;
+		width: 575px;
+		margin-left: 20px;
 	}
 	.box1 {
 		display: flex;
+		position: relative;
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: flex-end;
-		height: 586px;
+		height: 723px;
+		width: 575px;
 		background-color: #fff4f6;
-		padding: 5%;
 		padding-bottom: 0;
 		border-radius: 16px;
 		border-radius: 16px;
@@ -138,6 +169,9 @@
 		);
 		margin-bottom: 5%;
 		overflow: hidden;
+	}
+	.box1 .content {
+		padding: 50px;
 	}
 
 	.box1 p {
@@ -159,18 +193,23 @@
 		align-items: center;
 		position: relative;
 		overflow: hidden;
+		width: 100%;
+		height: 500px;
 	}
 	.box1 .image .vector {
 		position: absolute;
 		left: 0;
-		top: -151px;
+		top: -27px;
 		bottom: 0;
 		width: 100%;
 		z-index: 0;
 	}
 	.box1 img {
+		position: absolute;
+		top: 0;
 		z-index: 1;
-		width: 100%;
+		width: 356px;
+		height: 500px;
 	}
 	.box3 {
 		display: flex;
