@@ -1,12 +1,12 @@
-<div>
-	<canvas id="myChart"></canvas>
+<div style="height: 1200px">
+	<canvas id="myChart" style="max-width: 50%"></canvas>
 	<div>
 		<p>Gold Rate Increment/ Year</p>
 		<input type="range" min="1" max="100" id="rate" value="10" /> :
 		<span id="rate-percent">0 %</span>
 
 		<p>Daily Amount (in INR)</p>
-		<input type="range" min="100" max="1000" id="daily-amount" value="500" /> :
+		<input type="range" min="100" max="200000" id="daily-amount" value="500" /> :
 		<span id="amountValue">INR 0</span>
 
 		<p>Time (in Years)</p>
@@ -17,7 +17,7 @@
 		<p id="invested-amount">INR 0</p>
 		<strong>Estimated Returns:</strong> <br />
 		<p id="estimated-returns">INR 0</p>
-		<strong>Total Return on Gold:</strong> <br />
+		<strong>Total (Invested Amount + Estimated Returns):</strong> <br />
 		<p id="total-return-on-gold">INR 0</p>
 	</div>
 </div>
@@ -26,6 +26,7 @@
 <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
 
 <script>
+	let ChartInstance;
 	document.querySelector('#rate-percent').innerHTML = document.querySelector('#rate').value + ' %';
 	document.querySelector('#amountValue').innerHTML =
 		'INR ' + document.querySelector('#daily-amount').value;
@@ -45,14 +46,20 @@
 		const investedAtm = parseInt(
 			document.querySelector('#invested-amount').innerHTML.split(' ')[1]
 		);
-		const investedAmountReturn =
-			investedAtm * (parseInt(document.querySelector('#rate').value) / 100) + investedAtm;
-		console.log(investedAmountReturn);
+		let principal = investedAtm,
+			rate = parseInt(document.querySelector('#rate').value),
+			time = parseInt(duration);
+
+		let A = principal * Math.pow(1 + rate / 100, time);
+		let CI = A - principal;
+
+		const investedAmountReturn = Math.round(CI);
+
 		document.querySelector('#estimated-returns').innerHTML = 'INR ' + investedAmountReturn;
 
 		document.querySelector('#total-return-on-gold').innerHTML =
-			'INR ' + Math.round(investedAmountReturn - investedAtm);
-        drawGraph([]);
+			'INR ' + Math.round(investedAmountReturn + investedAtm);
+		drawGraph(Math.round(investedAmountReturn + investedAtm), investedAmountReturn);
 	}
 	let dailyAmount = document.querySelector('#daily-amount');
 
@@ -75,12 +82,23 @@
 
 	console.log(dailyAmount.value);
 
-	function drawGraph(data) {
-        console.log('draw');
-        
-		const ctx = document.getElementById('myChart');
+	function drawGraph(YLimitMax, returnAmount) {
+		if (ChartInstance) {
+			ChartInstance.destroy();
+		}
 
-		new Chart(ctx, {
+		const ctx = document.getElementById('myChart');
+		const dailyAmount = parseInt(document.querySelector('#daily-amount').value);
+		const duration = parseInt(document.querySelector('#duration').value);
+		let investmentDataArr = [];
+		for (let i = 0; i <= duration; i++) {
+			if (i == 0) {
+				investmentDataArr[i] = { x: 0, y: dailyAmount };
+			} else {
+				investmentDataArr[i] = { x: i, y: dailyAmount * 365 };
+			}
+		}
+		ChartInstance = new Chart(ctx, {
 			type: 'line',
 			data: {
 				labels: ['Return in Lakhs', 'Investment in Lakhs'],
@@ -88,18 +106,15 @@
 					{
 						label: 'Return in Lakhs',
 						data: [
-							{ x: 15, y: 4000000 },
-							{ x: 20, y: 4500000 }
+							{x: 0, y: 0},
+							{x: duration, y: returnAmount}
 						],
 						borderColor: '#E31C5D',
 						yAxisID: 'y'
 					},
 					{
 						label: 'Investment in Lakhs',
-						data: [
-							{ x: 0, y: 2700000 },
-							{ x: 10, y: 5000000 }
-						],
+						data: investmentDataArr,
 						borderColor: '#E6DAFF',
 						yAxisID: 'y1'
 					}
@@ -120,14 +135,14 @@
 						display: true,
 						position: 'left',
 						min: 0,
-						max: 5000000
+						max:  YLimitMax
 					},
 					y1: {
 						type: 'linear',
 						display: false,
 						position: 'left',
 						min: 0,
-						max: 5000000
+						max:  YLimitMax
 					},
 					x: {
 						type: 'linear',
