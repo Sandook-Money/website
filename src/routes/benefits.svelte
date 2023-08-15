@@ -111,17 +111,18 @@
 		letter-spacing: -0.96px;
 		text-align: left;
 		margin-top: 0;
+		margin: 0;
+		margin-bottom: 52px;
 		width: 100%;
 		max-width: 1190px;
 	}
 	#benefits-section {
 		display: flex;
 		flex-direction: column;
-		padding: 10%;
+		padding: 100px;
 		justify-content: flex-start;
 		align-items: center;
 		background: #fff;
-		
 	}
 
 	#benefits-section .benefits {
@@ -161,6 +162,7 @@
 		line-height: 42px; /* 131.25% */
 		letter-spacing: -0.64px;
 		text-align: left;
+		margin: 0;
 		margin-top: 48px;
 	}
 	#benefits-section .benefits .benefit-card p {
@@ -172,6 +174,7 @@
 		line-height: 24px; /* 150% */
 		text-align: left;
 		max-width: 330px;
+		margin: 0;
 	}
 	#benefits-section .benefits .benefit-card .benefits-circle {
 		display: flex;
