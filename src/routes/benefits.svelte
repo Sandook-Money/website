@@ -105,7 +105,7 @@
 	}
 	#calculator iframe {
 		width: 1180px;
-		height: 1055px;
+		height: 650px;
 	}
 	p:nth-child(1) {
 		color: #441a9e;
