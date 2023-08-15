@@ -167,7 +167,10 @@
 	<div class="top-heading">
 		<div class="top-heading-text">
 			<p>How it Works?</p>
-			<h1>Unlock financial potential: Understand. Invest. Prosper.</h1>
+			<h1>
+				Unlock financial potential: <br /><span style="color: #E31C5D;">Understand.</span>
+				<span style="color: #441A9E;">Invest.</span> <span style="color: #E31C5D;">Prosper.</span>
+			</h1>
 		</div>
 		<div class="top-heading-video-play">
 			<p>Play Video</p>
@@ -261,23 +264,27 @@
 
 	#how-it-works {
 		display: flex;
-		height: 939px;
+		max-width: 1190px;
+		width: 1190px;
+		min-height: 761px;
 		padding: 100px 0px;
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
 		background: #fbf2f5;
-		padding: 10%;
+		padding: 100px 125px 100px 125px;
 	}
 
 	#how-it-works .top-heading {
 		display: flex;
 		flex-direction: row;
-		justify-content: flex-start;
-		width: 100%;
+		justify-content: space-between;
+		align-items: center;
+		width: 1190px;
+		margin-bottom: 52px;
 	}
 	#how-it-works .top-heading .top-heading-text {
-		width: 80%;
+		width: 680px;
 	}
 	#how-it-works .top-heading .top-heading-text h1 {
 		color: #222;
@@ -287,7 +294,7 @@
 		font-weight: 700;
 		line-height: 114%; /* 45.6px */
 		letter-spacing: -0.8px;
-		width: 680px;
+		margin: 0;
 	}
 	#how-it-works .top-heading .top-heading-text p {
 		color: #222;
@@ -298,6 +305,7 @@
 		line-height: 114%; /* 18.24px */
 		letter-spacing: -0.32px;
 		text-align: left;
+		margin: 0;
 	}
 	#how-it-works .top-heading .top-heading-video-play {
 		display: flex;
@@ -319,10 +327,13 @@
 		flex-direction: row;
 		justify-content: center;
 		flex-wrap: wrap;
-		gap: 5%;
 	}
 	#how-it-works .how-it-works-content-card {
-		width: 30%;
+		width: 370px;
+	}
+	#how-it-works .how-it-works-content-card:nth-child(2) {
+		margin-left: 40px;
+		margin-right: 40px;
 	}
 	#how-it-works .how-it-works-content-card .how-it-works-content-card-image {
 		display: flex;
@@ -332,6 +343,7 @@
 		border-radius: 16px;
 		padding: 50px 50px 0 50px;
 		background-color: #ffffff;
+		margin-bottom: 40px;
 	}
 	#how-it-works .how-it-works-content-card .how-it-works-content-summary {
 		display: flex;
@@ -347,6 +359,8 @@
 		letter-spacing: 2.88px;
 		text-transform: uppercase;
 		text-align: left;
+		margin: 0;
+		margin-bottom: 16px;
 	}
 	#how-it-works .how-it-works-content-card .how-it-works-content-summary h1 {
 		color: #222;
@@ -357,6 +371,8 @@
 		line-height: 42px; /* 131.25% */
 		letter-spacing: -0.64px;
 		text-align: left;
+		margin: 0;
+		margin-bottom: 16px;
 	}
 	#how-it-works .how-it-works-content-card .how-it-works-content-summary p {
 		color: #666;
@@ -366,6 +382,7 @@
 		font-weight: 450;
 		line-height: 24px; /* 150% */
 		text-align: left;
+		margin: 0;
 	}
 
 	#unlock-section {
