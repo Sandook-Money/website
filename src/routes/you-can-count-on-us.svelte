@@ -463,7 +463,6 @@
 		line-height: 114%; /* 45.6px */
 		letter-spacing: -0.8px;
 		margin: 0;
-		margin-bottom: 25px;
 		text-transform: capitalize;
 	}
 	.info-section-row-content .summary {
