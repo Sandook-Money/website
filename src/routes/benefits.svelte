@@ -44,8 +44,15 @@
 		}
 	];
 </script>
+
 <section id="calculator">
-	<iframe src="https://calculator.sandook.money" frameborder="0"></iframe>
+	<div class="heading">
+		<h1>Know your Growth</h1>
+		<p>Unleash your financial potential with precision projections</p>
+	</div>
+	<div class="content">
+		<iframe src="https://calculator.sandook.money" frameborder="0" />
+	</div>
 </section>
 <section id="benefits-section">
 	<p>Benefits</p>
@@ -65,9 +72,7 @@
 
 <section id="features-of-making">
 	<h1>Features of making your investment journey easier</h1>
-	<p>
-		Explore Smart Tools and Innovations for an Effortless Investment Journey.
-	</p>
+	<p>Explore Smart Tools and Innovations for an Effortless Investment Journey.</p>
 	<img class="mobile-1" src={Mobile1} />
 	<img class="mobile-2" src={Mobile2} />
 	<img class="mobile-3" src={Mobile3} />
@@ -79,8 +84,24 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		background: #FFF;
+		background: #fff;
 		padding: 100px 130px 100px 130px;
+	}
+	#calculator .heading {
+		max-width: 1190px;
+	}
+	#calculator .heading h1 {
+		margin: 0;
+	}
+	#calculator .heading p {
+		margin: 0;
+		margin-top: 3.76px;
+	}
+	#calculator .content {
+		border-radius: 48px;
+		border: 1px solid #D9D9D9;
+		background: #fff;
+		margin-top: 38px;
 	}
 	#calculator iframe {
 		width: 1180px;
@@ -133,7 +154,7 @@
 	}
 	#benefits-section .benefits .benefit-card {
 		width: 31%;
-		border-right: 1px solid #D8D8D8;
+		border-right: 1px solid #d8d8d8;
 		padding: 0%;
 		margin-top: 25px;
 		margin-bottom: 25px;
