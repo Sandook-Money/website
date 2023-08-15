@@ -125,9 +125,9 @@
 			>
 				<img src={image} alt="Image" />
 			</div>
-			<div class="info-section-row-content" style="padding: {reverse ? '0' : ''}">
+			<div class="info-section-row-content" style="padding: {reverse ? '0' : '40px'}">
 				<h1>{@html heading}</h1>
-				<p>
+				<p class="summary">
 					{summary}
 				</p>
 				<div class="info-section-row-feedback">
@@ -231,7 +231,7 @@
 		letter-spacing: -0.52px;
 		margin: 0;
 	}
-	
+
 	.list {
 		display: flex;
 		flex-direction: row;
@@ -407,7 +407,6 @@
 		align-items: center;
 	}
 	#unlock-section .unlock-section-right img {
-
 	}
 
 	#info-section {
@@ -417,7 +416,6 @@
 		align-items: center;
 		padding: 231px 125px 100px 125px;
 		background: #fff;
-		
 	}
 	#info-section .info-section-row {
 		display: flex;
@@ -449,7 +447,7 @@
 		margin-right: 0;
 	}
 	#info-section .info-section-row .info-section-row-content {
-		width: 353px;
+		width: 575px;
 		padding-left: 40px;
 		display: flex;
 		flex-direction: column;
@@ -466,6 +464,21 @@
 		letter-spacing: -0.8px;
 		margin: 0;
 		margin-bottom: 25px;
+		text-transform: capitalize;
+	}
+	.info-section-row-content .summary {
+		color: #666;
+		font-family: Circular;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 450;
+		line-height: 24px; /* 150% */
+		margin: 0;
+		margin-top: 24px;
+	}
+	.info-section-row-content p {
+		margin: 0;
+		margin-top: 24px;
 	}
 	.info-section-row-feedback {
 		display: flex;
@@ -474,12 +487,16 @@
 	}
 
 	.info-section-row-feedback p {
-		margin: 0;
-		margin-bottom: 15px;
-		text-align: left;
+		color: #666;
+		font-family: Circular;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 450;
+		line-height: 24px; /* 150% */
 	}
 
 	.info-section-row-feedback .quote-div {
 		margin-right: 15px;
+		margin-top: 24px;
 	}
 </style>
