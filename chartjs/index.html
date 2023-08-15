@@ -1,6 +1,25 @@
-<div style="height: 1200px">
+<head>
+	<style>
+		#my-cal {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+		}
+		#myChart {
+			max-width: 50%;
+			width: 50%;
+		}
+		.actions {
+			max-width: 50%;
+			width: 50%;
+			padding-left: 5%;
+		}
+	</style>
+</head>
+<div id="my-cal" style="height: 1200px">
 	<canvas id="myChart" style="max-width: 50%"></canvas>
-	<div>
+	<div class="actions">
 		<p>Gold Rate Of Increment % Year</p>
 		<input type="range" min="1.0" max="100.0" id="rate" value="1.8" /> :
 		<span id="rate-percent">0 %</span>
