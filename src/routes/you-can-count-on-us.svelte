@@ -80,34 +80,34 @@
 
 	const list = [
 		{
-			heading: 'Rs. 12 Crores invested with Sandook',
+			heading: '<Strong>1.4 Million</strong><br> Growing Community',
 			summary:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+				'Join our expanding community of future-oriented individuals as we strive to empower millions on their wealth creation journey.'
 		},
 		{
-			heading: '20,000+ Happy Customers and counting',
+			heading: "<strong>₹ 100's</strong><br> Saved Daily ",
 			summary:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+				"With aspirations as big as our numbers, we're here to facilitate crore's in daily transactions, making gold investing accessible and impactful."
 		},
 		{
-			heading: '14.5% average annual returns on gold investment',
+			heading: '<strong>12.3% </strong><br> Annual Gold Growth',
 			summary:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+				'Witness the potential as we embrace an annual growth of gold investments, providing you a steady pathway towards financial security'
 		},
 		{
-			heading: '136 Cities covered accross India',
+			heading: '<strong>₹ 10</strong><br>Start Small, Dream Big',
 			summary:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+				'Begin your investment journey with a humble Rs. 10. With Sandook Money, even the smallest investments hold the promise of future prosperity'
 		}
 	];
 </script>
 
 <div id="you-can-count-on-us">
-	<h1 class="heading">You can count on us</h1>
+	<h1 class="heading">Our vision</h1>
 	<div class="list">
 		{#each list as { heading, summary }}
 			<div class="list-box">
-				<h1>{heading}</h1>
+				<h1>{@html heading}</h1>
 				<p>{summary}</p>
 			</div>
 		{/each}
@@ -199,33 +199,62 @@
 		color: #ffffff;
 		padding: 10%;
 		font-family: 'Circular';
-		
 	}
-
-	.heading {
-		font-size: 4em;
-		font-weight: bolder;
+	#you-can-count-on-us .heading {
 		color: #845dd6;
-		width: 350px;
+		font-family: Circular;
+		font-size: 100px;
+		font-style: bold;
+		font-weight: 500;
+		line-height: 72.5%; /* 72.5px */
+		letter-spacing: -4px;
+		text-align: left;
 	}
-	h1 {
-		font-size: 2em;
-		font-weight: bolder;
-		color: #ffffff;
-	}
-	p {
+	#you-can-count-on-us h1 strong {
+		color: #fff;
 		text-align: center;
-		font-size: 1em;
-		opacity: 0.8;
+		font-family: Circular;
+		font-size: 42px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 114%; /* 47.88px */
+		letter-spacing: -0.84px;
 	}
+	#you-can-count-on-us h1 {
+		color: #fff;
+		text-align: center;
+		font-family: Circular;
+		font-size: 26px;
+		font-style: normal;
+		font-weight: 450;
+		line-height: 114%; /* 29.64px */
+		letter-spacing: -0.52px;
+		margin: 0;
+	}
+	
 	.list {
 		display: flex;
 		flex-direction: row;
 		font-family: 'Circular';
+		margin-top: 72px;
 	}
 	.list-box {
-		width: 33.33%;
-		margin: 15px;
+		width: 268px;
+		margin-right: 40px;
+	}
+	.list-box:last-child {
+		width: 268px;
+		margin-right: 0px;
+	}
+	.list-box p {
+		color: rgba(255, 255, 255, 0.6);
+		text-align: center;
+		font-family: Circular;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 450;
+		line-height: 24px; /* 150% */
+		margin-top: 32px;
 	}
 
 	#how-it-works {
