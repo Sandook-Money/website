@@ -148,13 +148,15 @@
 
 <section id="unlock-section">
 	<div class="unlock-section-left">
-		<h1>Unlock exciting rewards as you save and invest with Sandook</h1>
+		<h1>
+			Unlock <span style="color: #FEE004;">exciting rewards</span> as you save and invest with Sandook
+		</h1>
 		<p>
 			Unlock exciting rewards as you save and invest with Sandook. Earn loyalty points, exclusive
 			discounts, and special offers from our partner brands. Your financial journey becomes even
 			more rewarding with Sandook
 		</p>
-		<Button width={'239px'} text="Refer any of your Friend" />
+		<a class="button-primary button-style-2" href="#">Refer any of your Friend</a>
 	</div>
 	<div class="unlock-section-right">
 		<img src={Image8} alt="image" />
@@ -369,14 +371,21 @@
 	#unlock-section {
 		display: flex;
 		flex-direction: row;
-		justify-content: center;
+		justify-content: space-between;
 		align-items: center;
-		padding: 10%;
+		padding: 100px 125px 100px 125px;
 		background: linear-gradient(270deg, #542876 0%, rgba(82, 11, 90, 0) 100%), #322949;
 		background-blend-mode: overlay, normal, normal;
 	}
 	#unlock-section .unlock-section-left {
-		width: 50%;
+		display: flex;
+		max-width: 500px;
+		padding: 72px 0px;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+		flex: 1 0 0;
+		align-self: stretch;
 	}
 	#unlock-section .unlock-section-left h1 {
 		color: #fff;
@@ -387,6 +396,7 @@
 		line-height: 114%; /* 45.6px */
 		letter-spacing: -0.8px;
 		text-align: left;
+		margin: 0;
 	}
 	#unlock-section .unlock-section-left p {
 		color: rgba(255, 255, 255, 0.6);
@@ -396,15 +406,21 @@
 		font-weight: 450;
 		line-height: 24px; /* 150% */
 		text-align: left;
+		margin: 0;
 	}
-	#unlock-section .unlock-section-left button {
+	#unlock-section .unlock-section-left a {
+		display: flex;
+		padding: 16px 32px;
+		flex-direction: column;
+		align-items: flex-start;
+		width: 175px;
+		height: 24px;
 	}
 	#unlock-section .unlock-section-right {
-		width: 50%;
 		display: flex;
-		flex-direction: row;
-		justify-content: flex-end;
+		padding: 0px 52px;
 		align-items: center;
+		gap: 10px;
 	}
 	#unlock-section .unlock-section-right img {
 	}
@@ -464,6 +480,7 @@
 		letter-spacing: -0.8px;
 		margin: 0;
 		text-transform: capitalize;
+		width: 100%;
 	}
 	.info-section-row-content .summary {
 		color: #666;
