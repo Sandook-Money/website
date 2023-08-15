@@ -1,16 +1,16 @@
 <div style="height: 1200px">
 	<canvas id="myChart" style="max-width: 50%"></canvas>
 	<div>
-		<p>Gold Rate Increment/ Year</p>
-		<input type="range" min="1" max="100" id="rate" value="10" /> :
+		<p>Gold Rate Of Increment % Year</p>
+		<input type="range" min="1.0" max="100.0" id="rate" value="1.8" /> :
 		<span id="rate-percent">0 %</span>
 
 		<p>Daily Amount (in INR)</p>
-		<input type="range" min="100" max="200000" id="daily-amount" value="500" /> :
+		<input type="range" min="10" max="200000" id="daily-amount" value="10" /> :
 		<span id="amountValue">INR 0</span>
 
 		<p>Time (in Years)</p>
-		<input type="range" min="1" max="20" id="duration" value="15" /> :
+		<input type="range" min="1" max="20" id="duration" value="20" /> :
 		<span id="durationValue">INR 0</span>
 		<br />
 		<strong>Invested Amount:</strong> <br />
@@ -47,7 +47,7 @@
 			document.querySelector('#invested-amount').innerHTML.split(' ')[1]
 		);
 		let principal = investedAtm,
-			rate = parseInt(document.querySelector('#rate').value),
+			rate = parseFloat(document.querySelector('#rate').value),
 			time = parseInt(duration);
 
 		let A = principal * Math.pow(1 + rate / 100, time);
@@ -101,10 +101,10 @@
 		ChartInstance = new Chart(ctx, {
 			type: 'line',
 			data: {
-				labels: ['Return in Lakhs', 'Investment in Lakhs'],
+				labels: ['Return Amount', 'Investment Amount'],
 				datasets: [
 					{
-						label: 'Return in Lakhs',
+						label: 'Return',
 						data: [
 							{x: 0, y: 0},
 							{x: duration, y: returnAmount}
@@ -113,7 +113,7 @@
 						yAxisID: 'y'
 					},
 					{
-						label: 'Investment in Lakhs',
+						label: 'Investment',
 						data: investmentDataArr,
 						borderColor: '#E6DAFF',
 						yAxisID: 'y1'
