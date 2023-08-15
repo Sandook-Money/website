@@ -209,17 +209,19 @@
 	#features-of-making {
 		background: #fee8ff;
 		display: flex;
-		height: 785px;
+		height: 685px;
 		padding-top: 100px;
 		flex-direction: column;
 		justify-content: flex-start;
 		align-items: flex-start;
 		position: relative;
-		padding: 10%;
+		padding: 100px 125px 100px 125px;
 	}
 	#features-of-making p {
 		width: 50%;
 		color: #666;
+		width: 320px;
+		margin: 0;
 	}
 	#features-of-making h1 {
 		color: #441a9e;
@@ -229,7 +231,9 @@
 		font-weight: 700;
 		line-height: 114%; /* 54.72px */
 		letter-spacing: -0.96px;
-		width: 700px;
+		width: 710px;
+		margin: 0;
+		margin-bottom: 24px;
 	}
 	.mobile-1 {
 		position: absolute;
