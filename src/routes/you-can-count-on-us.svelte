@@ -1,9 +1,9 @@
 <script>
 	export const prerender = true;
 	export const ssr = true;
-	import Image5 from '$lib/images/5.svg';
-	import Image6 from '$lib/images/6.svg';
-	import Image7 from '$lib/images/7.svg';
+	import Image5 from '$lib/images/5.png';
+	import Image6 from '$lib/images/6.png';
+	import Image7 from '$lib/images/7.png';
 
 	import Image8 from '$lib/images/8.svg';
 
