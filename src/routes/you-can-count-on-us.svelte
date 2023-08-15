@@ -5,11 +5,11 @@
 	import Image6 from '$lib/images/6.png';
 	import Image7 from '$lib/images/7.png';
 
-	import Image8 from '$lib/images/8.svg';
+	import Image8 from '$lib/images/8.png';
 
-	import Image9 from '$lib/images/9.svg';
-	import Image10 from '$lib/images/10.svg';
-	import Image11 from '$lib/images/11.svg';
+	import Image9 from '$lib/images/9.png';
+	import Image10 from '$lib/images/10.png';
+	import Image11 from '$lib/images/11.png';
 
 	import PlayIcon from '$lib/icons/play.svg';
 
