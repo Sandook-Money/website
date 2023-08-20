@@ -96,7 +96,7 @@
 	</div>
 </section> -->
 
-<style>
+<style lang="sass">
 	#rating-section {
 		background: #0a0a0a;
 		padding: 10%;

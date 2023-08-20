@@ -17,7 +17,7 @@
 	>{text}</button
 >
 
-<style>
+<style lang="sass">
 	button {
 		width: 148px;
 		height: 50px;

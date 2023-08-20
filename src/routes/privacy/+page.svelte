@@ -125,7 +125,7 @@
 	</p>
 </section>
 
-<style>
+<style lang="sass">
 	.statement {
 		padding: 10%;
 	}

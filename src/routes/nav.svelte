@@ -102,7 +102,7 @@
 </div>
 <SignUpModel showModal={modalVisible} />
 
-<style>
+<style lang="sass">
 	#main-nav-secondary-container {
 		width: 549px;
 		box-shadow: 0px 10px 40px 0px rgba(38, 43, 49, 0.07);

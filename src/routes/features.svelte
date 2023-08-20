@@ -101,7 +101,7 @@
 	</div>
 </section>
 
-<style>
+<style lang="sass">
 	.heading {
 		display: flex;
 		flex-direction: column;

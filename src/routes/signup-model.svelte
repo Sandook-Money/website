@@ -42,7 +42,7 @@
 	</div>
 </Modal>
 
-<style>
+<style lang="sass">
 	.notify-me-btn {
 		display: flex;
 		width: 193px;

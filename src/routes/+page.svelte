@@ -62,7 +62,7 @@
 	</div>
 </div>
 
-<style>
+<style lang="sass">
 	#main-top {
 		background: linear-gradient(216deg, #eec8ef 0%, #f1ebde 50%, #e1d8f3 100%);
 		height: 726px;

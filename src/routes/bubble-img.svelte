@@ -13,7 +13,7 @@
 	<img src={ImageSrc} style="width: {width}; height: {height};" alt="bubble-img" />
 </section>
 
-<style>
+<style lang="sass">
 	.bubble-img {
 		position: relative;
 	}

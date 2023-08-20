@@ -21,7 +21,7 @@
 	</div>
 </dialog>
 
-<style>
+<style lang="sass">
 	dialog {
         position: relative;
 		width: 806px;

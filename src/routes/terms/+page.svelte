@@ -389,7 +389,7 @@
 	<p>Tel: +91 - 80486 41973 Email: support@gullak.money</p>
 </section>
 
-<style>
+<style lang="sass">
 	.statement {
 		padding: 10%;
 	}

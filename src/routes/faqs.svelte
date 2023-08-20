@@ -99,7 +99,7 @@
 	{/each}
 </section>
 
-<style>
+<style lang="sass">
 	#faqs {
 		display: flex;
 		flex-direction: row;

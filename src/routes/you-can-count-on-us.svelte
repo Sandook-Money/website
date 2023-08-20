@@ -195,7 +195,7 @@
 	</div>
 </section>
 
-<style>
+<style lang="sass">
 	#you-can-count-on-us {
 		display: flex;
 		flex-direction: column;

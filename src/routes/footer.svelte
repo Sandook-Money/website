@@ -84,7 +84,7 @@
 <p>&copy; Copyright {currentYear} | <a href="/">sandook.money</a> </p>
 </footer>
 
-<style>
+<style lang="sass">
 	a {
 		text-decoration: none;
 		color: #666666;

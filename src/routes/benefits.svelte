@@ -78,7 +78,7 @@
 	<img class="mobile-3" src={Mobile3} />
 </section>
 
-<style>
+<style lang="sass">
 	#calculator {
 		display: flex;
 		flex-direction: column;

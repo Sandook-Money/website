@@ -10,7 +10,7 @@
 	<h1>{heading}</h1>
 </section>
 
-<style>
+<style lang="sass">
 	section {
 		display: flex;
 		flex-direction: column;
