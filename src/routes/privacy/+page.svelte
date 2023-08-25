@@ -6,8 +6,7 @@
 
 	<p>
 		SANDOOK.MONEY Application is developed by Finterscale Technologies Private Limited, a company
-		incorporated under the Companies Act, 2013 with its registered office at 4th Floor, Building,
-		387, Koramangala 4th Block, Koramangala, Bengaluru, Karnataka 560034, India. This policy
+		incorporated under the Companies Act, 2013 with its registered office at O1-603, Oxirich Avenue, Niho Scottish Society, Ahinsa Khand 2, Ghaziabad, Uttar Pradesh, India. This policy
 		describes how Sandook and its Affiliates/Entities/Subsidiaries/Associates, including but not
 		limited to Finterscale Technology Private Limited, collect, store, use, and otherwise process
 		your Personal Information through Sandook website, Sandook Application, sdk, chatbot,
