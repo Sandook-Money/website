@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Circular";
-  src: url("/fonts/CircularStdFont.otf") format("otf");
+  src: url("https://sandook.money/fonts/CircularStdFont.otf") format("otf");
 }
 html {
   scroll-behavior: smooth;
