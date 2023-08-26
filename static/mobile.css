@@ -1,0 +1,206 @@
+@font-face {
+  font-family: "Circular";
+  src: url("https://sandook.money/fonts/CircularStdFont.otf") format("otf");
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Circular";
+  background: blanchedalmond;
+}
+@media (max-width: 500px) {
+  body {
+    width: 100% !important;
+  }
+}
+
+.button-primary {
+  width: 148px;
+  height: 50px;
+  border-radius: 24px;
+  text-transform: capitalize;
+  background-color: transparent;
+  border-color: #d1abcf;
+  border-width: 1px;
+  border-style: solid;
+  font-family: "circular";
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+.button-style-1 {
+  border-radius: var(--corner-radius-border-radius-m, 24px);
+  border: 1px solid #d1abcf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-style-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #e31c5d;
+  color: #ffffff;
+  text-decoration: none;
+  border-color: transparent;
+}
+
+input {
+  padding: 10px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .main-container {
+    width: 100% !important;
+  }
+}
+@media (min-width: 5001px) {
+  .main-container .container {
+    max-width: 1440px;
+  }
+}
+@media (max-width: 500px) {
+  .main-container .container {
+    width: 100% !important;
+  }
+}
+.main-container .container #main-top .navbar-primary {
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .main-container .container #main-top {
+    width: 100% !important;
+    height: 847px !important;
+  }
+  .main-container .container #main-top #main-banner-mobile-app-img {
+    position: absolute;
+    bottom: -4%;
+    max-width: 80%;
+    right: 9%;
+  }
+  .main-container .container #main-top .main-banner-heading {
+    width: 90% !important;
+    position: absolute;
+    width: 480px;
+    top: 41px;
+    left: 0%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 72px;
+  }
+  .main-container .container #main-top .main-banner-heading .button-primary {
+    width: 60% !important;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  .main-container .container #main-top .main-banner-heading p:nth-child(1) {
+    text-align: center;
+  }
+  .main-container .container #main-top .main-banner-heading p:nth-child(3) {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 28px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 20px;
+  }
+  .main-container .container #main-top .main-banner-heading span {
+    font-size: 2em !important;
+    display: block;
+    text-align: center;
+  }
+  .main-container .container #main-top .main-banner-heading .partner-logos {
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 49px;
+  }
+  .main-container .container #main-top .main-banner-heading .partner-logos .augmont-logo {
+    width: 150px;
+    height: 150px;
+  }
+  .main-container .container #main-top .main-banner-heading .partner-logos .phonepay-logo {
+    width: 150px;
+    height: 150px;
+  }
+  .main-container .container #main-top .navbar-primary #main-nav {
+    justify-content: space-between;
+  }
+  .main-container .container #main-top .navbar-primary #main-nav .logo {
+    width: 50%;
+  }
+  .main-container .container #main-top .navbar-primary #main-nav .nav-links {
+    display: none;
+  }
+  .main-container .container #main-top .navbar-primary #main-nav .nav-actions {
+    width: 50%;
+  }
+  .main-container .container #main-top .navbar-secondary {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .main-container .container #features-investment-journy {
+    display: none;
+  }
+  .main-container .container #you-can-count-on-us {
+    display: none !important;
+  }
+  .main-container .container #info-section {
+    display: none !important;
+  }
+  .main-container .container #unlock-section {
+    display: none !important;
+  }
+  .main-container .container #how-it-works {
+    display: none !important;
+  }
+  .main-container .container #calculator {
+    display: none !important;
+  }
+  .main-container .container #benefits-section {
+    display: none !important;
+  }
+  .main-container .container #features-of-making {
+    display: none !important;
+  }
+  .main-container .container #faqs {
+    display: none !important;
+  }
+  .main-container .container #others-faqs-section {
+    display: none !important;
+  }
+  .main-container .container #story-sandook {
+    display: none !important;
+  }
+}
+
+@media (max-width: 500px) {
+  footer #quick-links {
+    flex-wrap: wrap;
+  }
+  footer #quick-links .social {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  footer #quick-links .product {
+    width: 50%;
+  }
+  footer #quick-links .sandook {
+    width: 50%;
+  }
+}
+
+/*# sourceMappingURL=mobile.css.map */

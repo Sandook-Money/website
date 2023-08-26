@@ -28,7 +28,7 @@
 	const sandookLinks = [
 		{ url: '/#story-sandook', text: 'About Us' },
 		{ url: 'https://blog.sandook.money', text: 'Blogs' },
-		{ url: '/#faqs', text: 'FAQs' }
+		{ url: '/#faqs', text: 'FAQs' },
 	];
 
 	const learningLinks = [
@@ -73,7 +73,14 @@
 			{/each}
 		</div>
 	</div>
-
+	<hr />
+	
+	<div>
+		<h1>Contact Us</h1>
+		<p>Punit Jain</p>
+		<p>+91 78770 79666</p>
+	</div>
+	
 	<hr />
 
 	<div class="legal-docs">
@@ -81,6 +88,7 @@
 		<a href="/disclaimer">Disclaimer!</a>
 		<a href="/privacy">Privacy Policy</a>
 	</div>
+	
 <p>&copy; Copyright {currentYear} | <a href="/">sandook.money</a> </p>
 </footer>
 

@@ -42,8 +42,8 @@
 					seamless, and enticing
 				</p>
 				<div class="partner-logos">
-					<img src={AugmontLogo} alt="Augmont Logo" />
-					<img src={PhonepayLogo} alt="Phonepay Logo" />
+					<img class="augmont-logo" src={AugmontLogo} alt="Augmont Logo" />
+					<img class="phonepay-logo" src={PhonepayLogo} alt="Phonepay Logo" />
 				</div>
 				<a class="button-primary button-style-2" on:click={() => (modalVisible = true)}
 					>Sign Up Now</a
@@ -73,6 +73,9 @@
 		justify-content: flex-start;
 		align-items: flex-start;
 		position: relative;
+		@media screen (max-width: 500) {
+			width: 500px
+		}
 	}
 	.navbar-primary {
 		display: flex;
@@ -127,4 +130,5 @@
 		width: 82px;
 		height: 12px;
 	}
+
 </style>
