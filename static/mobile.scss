@@ -190,19 +190,5 @@ input {
 }
 
 footer {
-	@media (max-width: 500px) {
-		#quick-links {
-			flex-wrap: wrap;
-			.social {
-				width: 100%;
-				margin-bottom: 20px;
-			}
-			.product {
-				width: 50%;
-			}
-			.sandook {
-				width: 50%;
-			}
-		}
-	}
+	
 }

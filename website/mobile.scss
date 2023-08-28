@@ -900,15 +900,58 @@ body {
 	}
 
 	footer {
-		@media (max-width: 992px) {
-			#quick-links {
-				.social {
-				}
-				.product {
-				}
-				.sandook {
+		padding-top: 100px;
+		padding-bottom: 100px;
+		h1 {
+			color: #222;
+			font-family: Circular;
+			font-size: 15px;
+			font-style: normal;
+			font-weight: bold;
+			line-height: normal;
+		}
+		.social {
+			.social-icons {
+				margin-bottom: 50px;
+				a {
+					text-decoration: none;
+					margin-right: 15px;
 				}
 			}
+		}
+		.links {
+			display: flex;
+			flex-direction: column;
+			a {
+				color: #666;
+				font-family: Circular;
+				font-size: 15px;
+				font-style: normal;
+				font-weight: 450;
+				line-height: normal;
+				text-decoration: none;
+				margin-top: 10px;
+			}
+		}
+		.legal-docs {
+			a {
+				color: #666;
+				font-family: Circular;
+				font-size: 14px;
+				font-style: normal;
+				font-weight: 300;
+				line-height: 18px; /* 128.571% */
+				text-decoration-line: underline;
+			}
+		}
+		a {
+			color: #666;
+			font-family: Circular;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 300;
+			line-height: 18px; /* 128.571% */
+			text-decoration-line: underline;
 		}
 	}
 }

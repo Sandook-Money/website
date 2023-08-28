@@ -43,7 +43,14 @@
 								</li>
 							</ul>
 							<form class="d-flex" role="search">
-								<button class="btn btn-light-purple" type="submit">Sign Up</button>
+								<button
+									class="btn btn-light-purple"
+									type="submit"
+									data-toggle="modal"
+									data-target="#exampleModalCenter"
+								>
+									Sign Up
+								</button>
 							</form>
 						</div>
 					</div>
@@ -413,21 +420,25 @@
 				</div>
 			</section>
 			<section class="row" id="calculator">
-                <div class="col-12">
-                    <div class="container">
-                        <div class="col-lg-12 col-sm-12">
-                            <div class="heading">
-                                <h1>Know your Growth</h1>
-                                <p>Unleash your financial potential with precision projections</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-12 col-sm-12">
-                            <div class="row content">
-                                <iframe class="col-6" src="https://calculator.sandook.money" frameborder="0" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
+				<div class="col-12">
+					<div class="container">
+						<div class="col-lg-12 col-sm-12">
+							<div class="heading">
+								<h1>Know your Growth</h1>
+								<p>Unleash your financial potential with precision projections</p>
+							</div>
+						</div>
+						<div class="col-lg-12 col-sm-12">
+							<div class="row content">
+								<iframe
+									class="col-6"
+									src="https://calculator.sandook.money"
+									frameborder="0"
+								></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
 			</section>
 			<section id="benefits-section">
 				<p>Benefits</p>
@@ -513,68 +524,71 @@
 					</p>
 				</div>
 			</section>
-			<footer>
-				<div id="quick-links">
-					<div class="social">
-						<h1>Find us on</h1>
-						<div class="social-icons">
-							<a href="">
-								<img class="icons" src="assets/icons/fb.svg" />
-							</a>
-							<a href="">
-								<img class="icons" src="assets/icons/linkedin.svg" />
-							</a>
-							<a href="">
-								<img class="icons" src="assets/icons/youtube.svg" />
-							</a>
-							<a href="">
-								<img class="icons" src="assets/icons/threads.svg" />
-							</a>
-							<a href="">
-								<img class="icons" src="assets/icons/instagram.svg" />
-							</a>
-							<a href="">
-								<img class="icons" src="assets/icons/twitter.svg" />
-							</a>
+			<footer class="row">
+				<div class="col-12" id="quick-links">
+					<div class="container">
+						
+						<div class="row">
+							<div class="col-lg-3 col-sm-6 social">
+								<h1>Find us on</h1>
+								<div class="social-icons">
+									<a href="">
+										<img class="icons" src="assets/icons/fb.svg" />
+									</a>
+									<a href="">
+										<img class="icons" src="assets/icons/linkedin.svg" />
+									</a>
+									<a href="">
+										<img class="icons" src="assets/icons/youtube.svg" />
+									</a>
+									<a href="">
+										<img class="icons" src="assets/icons/threads.svg" />
+									</a>
+									<a href="">
+										<img class="icons" src="assets/icons/instagram.svg" />
+									</a>
+									<a href="">
+										<img class="icons" src="assets/icons/twitter.svg" />
+									</a>
+								</div>
+							</div>
+							<div class="col-lg-3 col-sm-6 links product">
+								<h1>Product</h1>
+								<a href="#">Auto Pilot</a>
+								<a href="#">Quick withdrawals</a>
+								<a href="#">Round Offs</a>
+								<a href="#">Lifestyle Investing</a>
+							</div>
+							<div class="col-lg-3 col-sm-6 links sandook">
+								<h1>Sandook</h1>
+								<a href="#">About Us</a>
+								<a href="#">Blogs</a>
+								<a href="#">FAQs</a>
+							</div>
+							<div class="col-lg-3 col-sm-6 links learning">
+								<h1>Learn</h1>
+								<a href="#">How Autopilot Works</a>
+							</div>
 						</div>
-					</div>
-					<div class="links product">
-						<h1>Product</h1>
-						<a href="#">Auto Pilot</a>
-						<a href="#">Quick withdrawals</a>
-						<a href="#">Round Offs</a>
-						<a href="#">Lifestyle Investing</a>
-					</div>
-					<div class="links sandook">
-						<h1>Sandook</h1>
-						<a href="#">About Us</a>
-						<a href="#">Blogs</a>
-						<a href="#">FAQs</a>
-					</div>
-					<div class="links learning">
-						<h1>Learn</h1>
-						<a href="#">How Autopilot Works</a>
+						<hr />
+						<div class="col-12">
+							<h1>Contact Us</h1>
+							<p>Punit Jain</p>
+							<p>+91 78770 79666</p>
+						</div>
+
+						<hr />
+
+						<div class="col-12 legal-docs">
+							<a href="terms.html">Terms &amp; Condition |</a>
+							<a href="disclaimer.html">Disclaimer! |</a>
+							<a href="privacy.html">Privacy Policy</a>
+						</div>
+						<p class="col-12">&copy; Copyright 2023 | <a href="/">sandook.money</a></p>
 					</div>
 				</div>
-				<hr />
-				<div>
-					<h1>Contact Us</h1>
-					<p>Punit Jain</p>
-					<p>+91 78770 79666</p>
-				</div>
-
-				<hr />
-
-				<div class="legal-docs">
-					<a href="terms.html">Terms &amp; Condition</a>
-					<a href="disclaimer.html">Disclaimer!</a>
-					<a href="privacy.html">Privacy Policy</a>
-				</div>
-
-				<p>&copy; Copyright 2023 | <a href="/">sandook.money</a></p>
 			</footer>
 		</div>
-
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
@@ -601,8 +615,6 @@
 							'background-color: transparent !important; box-shadow: none;'
 						);
 					}
-					// $('#nav1.bg-body-tertiary').attr('style', 'background-color: transparent !important');
-					// $('#nav1').css('display', 'block');
 				}
 			});
 		</script>
