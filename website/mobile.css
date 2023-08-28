@@ -913,6 +913,9 @@ body #faqs {
     padding-bottom: 50px;
   }
 }
+body #faqs .plus-icon {
+  display: none;
+}
 body #faqs h1 {
   color: #222;
   font-family: Circular;
