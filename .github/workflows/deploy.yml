@@ -23,14 +23,8 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: ${{ env.AWS_REGION }}
     
-    - name: install nodemodules
-      run: npm install
-
-    - name: Build
-      run: npm run build
-    
     - name: upload to S3
-      run: aws s3 cp build/ s3://sandook.money --recursive
+      run: aws s3 cp website/ s3://sandook.money --recursive
     
     - name: upload Calclator to S3
       run: aws s3 cp chartjs/ s3://calculator-sandook-app --recursive
