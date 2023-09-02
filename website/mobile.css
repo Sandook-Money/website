@@ -905,6 +905,64 @@ body #features-of-making .mobile-2 {
 body #features-of-making .mobile-3 {
   width: 24%;
 }
+body #benefits-section {
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+body #benefits-section .heading {
+  margin-bottom: 52px;
+}
+body #benefits-section .heading h1 {
+  color: #222;
+  text-align: left;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 114%; /* 54.72px */
+  letter-spacing: -0.96px;
+}
+body #benefits-section .heading p {
+  color: #441A9E;
+  text-align: left;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 114%; /* 15.96px */
+  letter-spacing: 4.2px;
+  text-transform: uppercase;
+}
+body #benefits-section .benefit-card h1 {
+  color: #222;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 42px; /* 131.25% */
+  letter-spacing: -0.64px;
+  margin: 0;
+}
+body #benefits-section .benefit-card p {
+  color: #666;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 24px; /* 150% */
+  margin: 0;
+  margin-top: 48px;
+  max-width: 330px;
+}
+body #benefits-section .benefit-card .benefits-circle {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1000px;
+  border: 1px solid #F4F4F4;
+  margin-bottom: 45px;
+}
+body #benefits-section .benefit-card.border-right {
+  border-right: 1px solid #D8D8D8;
+}
 body #faqs {
   padding-top: 100px;
   padding-bottom: 100px;
