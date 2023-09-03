@@ -993,6 +993,7 @@ body #features-of-making h1 {
 @media (max-width: 992px) {
   body #features-of-making h1 {
     max-width: 100%;
+    padding-left: 5%;
   }
 }
 body #features-of-making p {
@@ -1006,7 +1007,11 @@ body #features-of-making p {
 @media (max-width: 992px) {
   body #features-of-making p {
     max-width: 72%;
+    padding-left: 5%;
   }
+}
+body #features-of-making img:nth-child(1) {
+  width: 90% !important;
 }
 body #features-of-making .mobile-1 {
   width: 28%;
