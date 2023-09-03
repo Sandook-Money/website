@@ -1038,6 +1038,20 @@ body {
 			padding-top: 50px;
 			padding-bottom: 50px;
 		}
+		.accordion-button {
+			.accordion-header {
+				.accordion-button {
+					color: #222;
+					font-size: 16px;
+					font-style: normal;
+					font-weight: bold !important;
+					line-height: 24px; /* 150% */
+				}
+			}
+			&::after {
+				background-image: url('assets/images/faq-plus-icon.png') !important;
+			}
+		}
 		.plus-icon {
 			display: none;
 		}
