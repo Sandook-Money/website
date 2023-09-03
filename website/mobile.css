@@ -195,6 +195,11 @@ body #main-top .bg-body-tertiary:nth-child(2) {
 body #features-investment-journy {
   background: #fff;
 }
+@media (max-width: 992px) {
+  body #features-investment-journy {
+    padding-bottom: 42px;
+  }
+}
 body #features-investment-journy .heading {
   display: flex;
   flex-direction: column;
@@ -206,6 +211,7 @@ body #features-investment-journy .heading {
 @media (max-width: 992px) {
   body #features-investment-journy .heading {
     margin-bottom: 5px;
+    padding-top: 62px;
   }
 }
 body #features-investment-journy .heading p {
@@ -231,8 +237,17 @@ body #features-investment-journy .heading h1 {
     width: 100%;
   }
 }
+body #features-investment-journy .all-features-sections-mobile {
+  display: none;
+}
+@media (max-width: 992px) {
+  body #features-investment-journy .all-features-sections-mobile {
+    display: block;
+  }
+}
 @media (max-width: 992px) {
   body #features-investment-journy .all-features-sections {
+    display: none;
     overflow-x: scroll;
     max-height: 800px;
   }
@@ -962,6 +977,11 @@ body #benefits-section .benefit-card .benefits-circle {
 }
 body #benefits-section .benefit-card.border-right {
   border-right: 1px solid #D8D8D8;
+}
+@media (max-width: 992px) {
+  body #benefits-section .benefit-card.border-right {
+    border-color: transparent;
+  }
 }
 body #faqs {
   padding-top: 100px;

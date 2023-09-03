@@ -181,6 +181,11 @@ body {
 
 	#features-investment-journy {
 		background: #fff;
+		
+		@media (max-width: 992px) {
+			// display: none;
+			padding-bottom: 42px;
+		}
 		.heading {
 			display: flex;
 			flex-direction: column;
@@ -190,6 +195,7 @@ body {
 			margin-bottom: 52px;
 			@media (max-width: 992px) {
 				margin-bottom: 5px;
+				padding-top: 62px;
 			}
 			p {
 				color: #441a9e;
@@ -213,8 +219,15 @@ body {
 				}
 			}
 		}
+		.all-features-sections-mobile {
+			display: none;
+			@media (max-width:992px) {
+				display: block;
+			}
+		}
 		.all-features-sections {
 			@media (max-width: 992px) {
+				display: none;
 				overflow-x: scroll;
 				max-height: 800px;
 
@@ -984,6 +997,10 @@ body {
 			}
 			&.border-right {
 				border-right: 1px solid #D8D8D8;
+
+				@media (max-width: 992px) {
+					border-color: transparent;
+				}
 			}
 		}
 	}
