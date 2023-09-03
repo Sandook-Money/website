@@ -175,6 +175,14 @@ body #main-top #main-banner-mobile-app-img {
   bottom: 0%;
   right: 10%;
 }
+body #main-top #main-banner-mobile-app-img img {
+  width: 84%;
+}
+@media (max-width: 1500px) {
+  body #main-top #main-banner-mobile-app-img img {
+    width: 112%;
+  }
+}
 @media (max-width: 992px) {
   body #main-top #main-banner-mobile-app-img {
     position: relative !important;
@@ -316,11 +324,10 @@ body #features-investment-journy #auto-pilot .image-section {
 }
 body #features-investment-journy #auto-pilot .image-section .image {
   position: absolute;
-  bottom: -57px;
-  left: 106px;
+  bottom: -11px;
+  left: 2px;
   z-index: 2;
-  width: 356px;
-  height: 500px;
+  width: 100%;
 }
 body #features-investment-journy #auto-pilot .image-section .vector {
   position: absolute;
