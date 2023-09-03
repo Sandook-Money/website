@@ -12,6 +12,84 @@ body {
   font-family: "CircularStd Book" !important;
   background: white;
 }
+body .modal-dialog {
+  max-width: 50% !important;
+}
+@media (max-width: 992px) {
+  body .modal-dialog {
+    max-width: 90% !important;
+  }
+}
+body .modal-dialog .modal-header {
+  border-bottom: none;
+}
+body .modal-dialog .modal-body {
+  padding: 0;
+}
+body .modal-dialog .modal-body .subscribe-btn {
+  width: 186px;
+}
+@media (max-width: 992px) {
+  body .modal-dialog .modal-body .subscribe-btn {
+    margin-top: 15px !important;
+  }
+}
+body .modal-dialog .modal-body .input {
+  display: flex;
+  width: 328px;
+  padding: 15px 20px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px solid #D9D9D9;
+  background: #FFF;
+  max-height: 54px;
+}
+body .modal-dialog .modal-body .input:focus {
+  border: 1px solid #D9D9D9;
+}
+body .modal-dialog .modal-body .input:active {
+  border: 1px solid #D9D9D9;
+}
+body .modal-dialog .modal-body .input:focus-visible {
+  border: 1px solid #D9D9D9;
+}
+body .modal-dialog .modal-body .color-purple {
+  color: #E31C5D;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+}
+body .modal-dialog .modal-body p {
+  color: #111;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 150% */
+}
+body .modal-dialog .modal-body .text h1 {
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+body .modal-dialog .modal-body .text p {
+  width: 70%;
+  text-align: center;
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+body .modal-dialog .modal-footer-color {
+  background: #FFF9EE;
+  padding: 36px;
+}
 body .btn-light-purple {
   width: 149px;
   border-radius: 32px;
