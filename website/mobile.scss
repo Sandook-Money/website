@@ -724,7 +724,7 @@ body {
 				}
 			}
 			.info-section-row-content {
-				padding-left: 40px;
+				// padding-left: 40px;
 				@media (max-width: 992px) {
 					margin-top: 15px;
 				}
@@ -997,21 +997,25 @@ body {
 		padding-top: 100px;
 		h1 {
 			color: #441a9e;
-			
 			font-size: 48px;
 			font-style: normal;
 			font-weight: 700;
 			line-height: 114%; /* 54.72px */
 			letter-spacing: -0.96px;
+			@media (max-width: 992px) {
+				max-width: 100%;
+			}
 		}
 		p {
 			color: #666;
-			
 			font-size: 16px;
 			font-style: normal;
 			font-weight: 450;
 			line-height: 24px; /* 150% */
-			margin-top: 20px
+			margin-top: 20px;
+			@media (max-width: 992px) {
+				max-width: 72%;
+			}
 		}
 		.mobile-1 {
 			width: 28%;
