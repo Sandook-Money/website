@@ -1,29 +1,10 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<style>
-		#my-cal {
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-			align-items: center;
-		}
-		#myChart {
-			max-width: 50%;
-			width: 50%;
-		}
-		.actions {
-			max-width: 50%;
-			width: 50%;
-			padding-left: 5%;
-		}
-	</style>
+	<link rel="stylesheet" href="style.css">
     <title>Sandook calculator</title>
   </head>
   <body>
@@ -31,16 +12,49 @@
 <div id="my-cal" style="height: 600px">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-lg-6 col-sm-12">
-				<canvas id="myChart" style="max-width: 50%"></canvas>
+			<div class="col-lg-6 col-sm-12 d-flex justify-content-end">
+				<canvas id="myChart" style="max-width: 100%"></canvas>
 			</div>
 			<div class="col-lg-6 col-sm-12">
 				<div class="row">
 					<div class="col-12">
-						<input type="text" class="input" placeholder="">
+						<div class="input-div">
+							<p>Daily Savings Amount in ₹</p>
+							<div class="input-sub-div"><span>₹</span><input type="number" class="input" placeholder="500"></div>
+						</div>
 					</div>
 				</div>
-				<!-- <div class="actions">
+				<div class="row">
+					<div class="col-3">
+						<p>Time Invested</p>
+						<p>15 Years</p>
+					</div>
+					<div class="col-9">
+						<div>
+							<a href="#" class="btn btn-primary">-</a>
+							<p>6 Month</p>
+						</div>
+						<div>
+							<input type="range" min="1" max="240">
+						</div>
+						<div>
+							<a href="#" class="btn btn-primary">+</a>
+							<p>20 Years</p>
+						</div>
+					</div>
+					<hr>
+				</div>
+				<div class="row">
+					<div class="col-6">
+						<p>Total Savings of</p>
+						<h1>₹39.3 Lakhs</h1>
+					</div>
+					<div class="col-6">
+						<p>on ₹27.3 Lakhs of Savings</p>
+						<p>&  Earning of ₹11.9 Lakhs</p>
+					</div>
+				</div>
+				<div class="d-none actions">
 					<p>Gold Rate Of Increment % Year</p>
 					<input type="range" min="1.0" max="100.0" id="rate" value="1.8" /> :
 					<span id="rate-percent">0 %</span>
@@ -59,7 +73,7 @@
 					<p id="estimated-returns">INR 0</p>
 					<strong>Total (Invested Amount + Estimated Returns):</strong> <br />
 					<p id="total-return-on-gold">INR 0</p>
-				</div> -->
+				</div>
 			</div>
 		</div>
 	</div>
