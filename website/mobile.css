@@ -173,7 +173,7 @@ body #main-top .main-banner-heading {
 }
 @media (max-width: 992px) {
   body #main-top .main-banner-heading {
-    top: 6%;
+    top: 8%;
     left: auto;
     position: relative;
   }
@@ -665,7 +665,7 @@ body #you-can-count-on-us .heading {
     font-weight: 500;
     line-height: 68.5%; /* 32.88px */
     letter-spacing: -2.4px;
-    margin-bottom: 5px;
+    margin-bottom: 30px;
     text-align: center;
   }
 }
