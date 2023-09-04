@@ -905,7 +905,6 @@
 		<script>
 			$(window).on('scroll', function () {
 				var scrollPercent = $(window).scrollTop();
-				console.log(scrollPercent);
 				if (scrollPercent > 50) {
 					$('#nav1.bg-body-tertiary').attr(
 						'style',
@@ -913,10 +912,18 @@
 					);
 				} else {
 					if (scrollPercent < 30) {
-						$('#nav1.bg-body-tertiary').attr(
+						if ($(window).width() < 990) { 
+							$('#nav1.bg-body-tertiary').attr(
+							'style',
+							'background-color: white !important; box-shadow: none;'
+							);
+						} else {
+							$('#nav1.bg-body-tertiary').attr(
 							'style',
 							'background-color: transparent !important; box-shadow: none;'
-						);
+							);
+						}
+						
 					}
 				}
 			});

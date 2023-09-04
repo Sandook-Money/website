@@ -139,6 +139,11 @@ body #main-top #nav1 {
   padding-left: 5%;
   padding-right: 5%;
 }
+@media (max-width: 992px) {
+  body #main-top #nav1 {
+    background-color: #FFF !important;
+  }
+}
 body #main-top #nav2 {
   position: absolute;
   top: 10%;
