@@ -11,6 +11,9 @@ body {
 	margin: 0;
 	font-family: 'CircularStd Book' !important;
 	background: white;
+	.font-weight-bold {
+		font-weight: bold;
+	}
 	.modal-dialog {
 		max-width: 50% !important;
 		@media (max-width: 992px) {
