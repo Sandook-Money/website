@@ -878,14 +878,18 @@ body #how-it-works .top-heading .top-heading-video-play {
   justify-content: flex-end;
   align-items: flex-end;
 }
+body #how-it-works .top-heading .top-heading-video-play a {
+  color: #000;
+}
 body #how-it-works .top-heading .top-heading-video-play img {
   margin-left: 2%;
   width: 20%;
 }
 body #how-it-works .top-heading .top-heading-video-play p {
-  width: 80%;
+  width: 100%;
   margin: 0;
   text-decoration: underline;
+  height: 49px;
 }
 body #how-it-works .top-heading .top-heading-text {
   width: 680px;
