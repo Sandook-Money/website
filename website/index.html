@@ -880,12 +880,12 @@
 							<p>Experience the app before anyone else and provide us with valuable feedback to help shape its final form.</p>
 						</div>
 						<div class="col-lg-4 col-sm-12 d-none d-lg-block">
-							<p class="color-purple bold">Early Access</p>
-							<p>Experience the app before anyone else and provide us with valuable feedback to help shape its final form.</p>
+							<p class="color-purple bold">Special Offers</p>
+							<p>Gain access to unique promotions, discounts, or rewards reserved solely for our pre-launch community.</p>
 						</div>
 						<div class="col-lg-4 col-sm-12 d-none d-lg-block">
-							<p class="color-purple bold">Early Access</p>
-							<p>Experience the app before anyone else and provide us with valuable feedback to help shape its final form.</p>
+							<p class="color-purple bold">Insider Updates</p>
+							<p>Stay in the loop with regular updates, news, and behind-the-scenes insights directly from our development team.</p>
 						</div>
 					</div>
 				</div>
@@ -921,6 +921,13 @@
 			crossorigin="anonymous"
 		></script>
 		<script>
+			$('#exampleModal2').on('hidden.bs.modal', function (e) {
+				console.log('close');
+				$('#player').each(function(){
+					$(this).stopVideo();
+				});
+			})
+			
 			$(window).on('scroll', function () {
 				var scrollPercent = $(window).scrollTop();
 				if (scrollPercent > 50) {
